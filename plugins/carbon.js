@@ -7,7 +7,7 @@ const Asena = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const Config = require('../config');
-const dd = "Made by WhatsAsena"
+const dd = "Made By *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*"
 
 const Language = require('../language');
 const Lang = Language.getString('carbon');
