@@ -1,38 +1,58 @@
 {
     "name": "🎭ɴᴇᴏᴛʀᴏ𝙭🪐",
-    "description": "🎭ɴᴇᴏᴛʀᴏ𝙭🪐 - Makes it easy and fun to use Whatsapp.  Also first userbot for whatsapp made in Sri Lanka 🇱🇰.",
+    "description": "🎭ɴᴇᴏᴛʀᴏ𝙭🪐 - Makes it easy and fun to use Whatsapp.  Also first userbot for whatsapp made in Sri Lanka 🇱🇰",
     "logo": "https://telegra.ph/file/cc0e2bb2add47047d0fc0.jpg",
     "keywords": ["whatsapp", "userbot", "Asena", "WhatsAsena", "bot", "api", "ai"],
-    "repository": "https://github.com/tenuh/Whatsapp-Hashzi",
-    "website":   "https://t.me/farhan-dqz",
+    "repository": "https://github.com/teeeenuh/Fuckyou",
+    "website":   "https://chat.whatsapp.com/GTgqgMTo7FoJ1GqdijshsX",
     "success_url": "https://chat.whatsapp.com/GTgqgMTo7FoJ1GqdijshsX",
     "stack": "container",
     "env": {
         "ASENA_SESSION": {
-            "description": "Qr කේතය scan කළ පසු ලැබෙන session කේතය.ඇතුලත් කරන්න",
+            "description": "QR කේතය scan කල පසු ලැබෙන කේතය.",
             "required": true
         },
         "SUDO": {
-            "description": "ඔබ එය භාවිතා කරන්නේ කෙසේදැයි නොදන්නේ නම් හිස්ව තබන්න! සුඩෝ මාදිලිය; ඔබගේ අංකය ජාත්‍යන්තර අංකයක් විය යුතුය. එබැවින් රටේ කේතයෙන් පසුව ඔබේ අංකය තිබිය යුතුය. උදාහරණය: 9478xxxxxxxx (LK අංකය +94)",
+            "description": "ඔබ එය භාවිතා කරන්නේ කෙසේදැයි නොදන්නේ නම් හිස්ව තබන්න! සුඩෝ මාදිලිය; ඔබගේ අංකය ජාත්‍යන්තර අංකයක් විය යුතුය. එබැවින් රටේ කේතයෙන් පසුව ඔබේ අංකය තිබිය යුතුය. උදාහරණය: 947xxxxxxxx (Sri lanka අංකය 94)",
             "required": false
         },
         "LANGUAGE": {
-            "description": "භාෂාව සදහා මෙය En ලෙස තබන්න වෙනස් කරන්න එපා.",
+            "description": "Bot භාෂාව. En ලෙස සඳහන් කරන්න",
             "required": true,
-            "value": "EN"
+            "value": "en"
+        },
+        "ANTİ_LİNK": {
+            "description": "මඟහරින්න",
+            "required": true,
+            "value": "false"
+        },
+        "AUTO_BİO": {
+            "description": "මඟහරින්න",
+            "required": true,
+            "value": "false"
         },
         "HANDLERS": {
-            "description": "විධාන සඳහා. විධාන සඳහා.",
+            "description": "විධාන සඳහා කේත සළකුණු",
             "required": true,
             "value": "^[.!;]"
         },
+        "FULL_EVA": {
+            "description": "මඟහරින්න",
+            "required": true,
+            "value": "false"
+        },
+        "NO_LOG": {
+            "description": "මඟහරින්න",
+            "required": true,
+            "value": "false"
+        },
         "SEND_READ": {
-            "description": "Bot පණිවිඩ Seen කිරීමට අවශ්‍යනම් true ලෙස තබන්න",
+            "description": "Bot පණිවිඩ Seen කිරීමට අවශ්‍යනම් true යොදන්න.",
             "required": true,
             "value": "true"
         },
         "HEROKU": {
-            "description": "එය හෙරොකු හි ක්‍රියාත්මක වන්නේ නම් true ටයිප් කරන්න.",
+            "description": "If it is running in Heroku, type true.",
             "required": true,
             "value": "true"
         },
@@ -41,90 +61,90 @@
             "required": true
         },
         "MUTE_MESSAGE": {
-            "description": "ඔබට මෙම පණිවිඩය වෙනස් කිරීමට අවශ්‍ය නැතිනම් default ටයිප් කරන්න.",
+            "description": "වෙනස් කිරීමට අවශ්‍ය නොවේ නම් මඟහරින්න.",
             "required": false,
             "value": "default"
         },
         "BLOCK_CHAT": {
-            "description": "බොට් එහි වැඩ නොකරන චැට් එක තෝරන්න. උදා: 94xxxx && 905xxxx-1xxx හෝ 905xxxx, 905xxx ...",
+            "description": "බොට් වැඩ නොකරන චැට් එක තෝරන්න. Ex: 947xxxxxxxx && 947xxxxxxxx හෝ 947xxxxxxxx,947xxxxxxxx",
             "required": false,
-            "value": "false"
+            "value": "94766598862-1624945302,"
         },
         "UNMUTE_MESSAGE": {
-            "description": "ඔබට මෙම පණිවිඩය වෙනස් කිරීමට අවශ්‍ය නැතිනම් default ටයිප් කරන්න",
+            "description": "අවශ්‍ය නොවෙනම් මඟහරින්න",
             "required": false,
             "value": "default"
         },
         "BLOCK_MESSAGE": {
-            "description": "ඔබට මෙම පණිවිඩය වෙනස් කිරීමට අවශ්‍ය නැතිනම් default ටයිප් කරන්න",
+            "description": "Customizable Block Message! Use => default, to change back.",
             "required": false,
             "value": "default"
         },
         "UNBLOCK_MESSAGE": {
-            "description": "ඔබට මෙම පණිවිඩය වෙනස් කිරීමට අවශ්‍ය නැතිනම් default ටයිප් කරන්න",
+            "description": "Customizable Unblock Message! Use => default, to change back.",
             "required": false,
             "value": "default"
         },
         "WORK_TYPE": {
             "description": "🎭ɴᴇᴏᴛʀᴏ𝙭🪐 Working Type. ඔබ “පොදු” භාවිතා කරන්නේ නම්, සෑම කෙනෙකුටම බොට් භාවිතා කළ හැකිය. වෙනත් ආකාරයකින් ඔබ “පුද්ගලික” භාවිතා කරන්නේ නම්, ඔබේ බෝට් භාවිතා කළ හැක්කේ ඔබට පමණි.",
             "required": true,
-            "value": "private"
+            "value": "public"
         },
         "HEROKU_APP_NAME": {
-            "description": " ඉහත යෙදු නමම යොදන්න.",
+            "description": "ඉහත යෙදූ App Name එකම යොදන්න",
             "required": true
         },
         "DEBUG": {
-            "description": "සංවර්ධකයින් සඳහා පමණක්.",
+            "description": "සංවර්ධකයින් සදහා පමණයි",
             "required": true,
             "value": "false"
         },
         "REMOVE_BG_API_KEY": {
-            "description": "ඡායාරූප වල පසුබිම ඉවත් කරයි. https://remove.bg",
+            "description": "https://remove.bg",
             "required": false
         },
         "ALIVE_MESSAGE": {
-            "description": "වෙනස් නොකර මඟහරින්න.",
+            "description": "වෙනස් නොකරන්න.",
             "required": false,
-            "value": "```I am Alive```\n\n```Coded By RAVANA```"
+            "value": "\n*🎭ɴᴇᴏᴛʀᴏ𝙭🪐 ʙᴏᴛ* \n *Bang!! Bang!! Im Alive Now\n*🔥Version : -v5.3 Global Stable*\n*🔥Branch :  Vanzino*\n*➞𝐓ᴇᴇɴᴜ𝐗↺*\n\*⚡🙇Support group:https://chat.whatsapp.com/GTgqgMTo7FoJ1GqdijshsX*\n\n*Thank For using 🎭ɴᴇᴏᴛʀᴏ𝙭🪐*"
         },
         "BAN_MESSAGE": {
-            "description": "ඔබට මෙම පණිවිඩය වෙනස් කිරීමට අවශ්‍ය නැතිනම් default ටයිප් කරන්න",
+            "description": "Customizable Ban Message! Use => default, to change back.",
             "required": false,
             "value": "default"
         },
         "ADD_MESSAGE": {
-            "description": "ඔබට මෙම පණිවිඩය වෙනස් කිරීමට අවශ්‍ය නැතිනම් default ටයිප් කරන්න",
+            "description": "Customizable Add Message! Use => default, to change back.",
             "required": false,
             "value": "default"
         },
         "KICKME_MESSAGE": {
-            "description": "ඔබට මෙම පණිවිඩය වෙනස් කිරීමට අවශ්‍ය නැතිනම් default ටයිප් කරන්න",
+            "description": "Customizable Kickme Message! Use => default, to change back.",
             "required": false,
             "value": "default"
         },
         "PROMOTE_MESSAGE": {
-            "description": "අඔබට මෙම පණිවිඩය වෙනස් කිරීමට අවශ්‍ය නැතිනම් default ටයිප් කරන්න",
+            "description": "Customizable Promote Message! Use => default, to change back.",
             "required": false,
             "value": "default"
         },
         "DEMOTE_MESSAGE": {
-            "description": "ඔබට මෙම පණිවිඩය වෙනස් කිරීමට අවශ්‍ය නැතිනම් default ටයිප් කරන්න",
+            "description": "Customizable Demote Message! Use => default, to change back.",
             "required": false,
             "value": "default"
         },
         "AFK_MESSAGE": {
-            "description": "ඔබට මෙම පණිවිඩය වෙනස් කිරීමට අවශ්‍ය නැතිනම් default ටයිප් කරන්න",
+            "description": "Customizable AFK Message! Use => default, to change back.",
             "required": false,
             "value": "default"
         },
         "GAN_IMAGE": {
-            "description": "Gan Style ප්ලගිනය සඳහා රූප සබැඳිය ලියන්න. Gan Style ප්ලගිනය සඳහා රූප සබැඳිය ටයිප් කරන්න(මෙය වෙනස් කරන්න එපා).",
+            "description": "අවශ්‍යනොවේ මගහරින්න.",
             "required": true,
             "value": "https://i.hizliresim.com/loUtAb.jpg"
         },
         "NO_ONLINE": {
-            "description": "අත්‍යාවශ්‍ය නොවේ මඟහරින්න",
+            "description": "අවශ්‍ය නොවෙනම් මග හරින්න",
             "required": false,
             "value": "true"
         },
