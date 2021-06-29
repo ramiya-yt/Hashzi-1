@@ -17,13 +17,13 @@
 */
 
 function successfullMessage(msg) {
-    return "✅ *Hashzi*:  ```" + msg + "```"
+    return "✅ *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*:  ```" + msg + "```"
 }
 function errorMessage(msg) {
-    return "🛑 *Hashzi*:  ```" + msg + "```"
+    return "🛑 *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*:  ```" + msg + "```"
 }
 function infoMessage(msg) {
-    return "⏺️ *Hashzi*:  ```" + msg + "```"
+    return "⏺️ *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*:  ```" + msg + "```"
 }
 
 
