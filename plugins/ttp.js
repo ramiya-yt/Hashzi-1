@@ -137,33 +137,33 @@ Asena.addCommand({pattern: 'textimg$', fromMe: wk, desc: desc_msg}, (async (mess
         command_cmd = '👽Command : '
         desc_cmd = '🍀 Description : '
     }
-    const msg = command_cmd + '```.devil``` \n' + t1 + '_\n' + usage_cmd + '*.devil JulieMwol*\n\n' +
-        command_cmd + '```.bear``` \n' + desc_cmd + t2 + '_\n' + usage_cmd + '*.bear JulieMwol*\n\n' +
-        command_cmd + '```.wolf``` \n' + desc_cmd + t10 + '_\n' + usage_cmd + '*.wolf Julie;Mwol*\n\n' +
-        command_cmd + '```.neon```\n' + desc_cmd + t3 + '_\n' + usage_cmd + '*.neon JulieMwol*\n\n' +
-        command_cmd + '```.2neon``` \n' + desc_cmd + t4 + '_\n' + usage_cmd + '*.2neon JulieMwol*\n\n' +
-        command_cmd + '```.3neon``` \n' + desc_cmd + t18 + '_\n' + usage_cmd + '*.3neon JulieMwol*\n\n' +
-        command_cmd + '```.4neon``` \n' + desc_cmd + t27 + '_\n' + usage_cmd + '*.4neon JulieMwol*\n\n' +
-        command_cmd + '```.light``` \n' + desc_cmd + t5 + '_\n' + usage_cmd + '*.light JulieMwol*\n\n' +
-        command_cmd + '```.joker``` \n' + desc_cmd + t6 + '_\n' + usage_cmd + '*.joker JulieMwol*\n\n' +
-        command_cmd + '```.ninja``` \n' + desc_cmd + t7 + '_\n' + usage_cmd + '*.ninja Julie;Mwol*\n\n' +
-        command_cmd + '```.glitter``` \n' + desc_cmd + t8 + '_\n' + usage_cmd + '*.glitter JulieMwol*\n\n' +
-        command_cmd + '```.bokeh``` \n' + desc_cmd + t9 + '_\n' + usage_cmd + '*.bokeh JulieMwol*\n\n' +
-        command_cmd + '```.marvel``` \n' + desc_cmd + t11 + '_\n' + usage_cmd + '*.marvel Julie;Mwol*\n\n' +
-        command_cmd + '```.2marvel``` \n' + desc_cmd + t12 + '_\n' + usage_cmd + '*.2marvel Julie;Mwol*\n\n' +
-        command_cmd + '```.avengers``` \n' + desc_cmd + t13 + '_\n' + usage_cmd + '*.avengers Julie;Mwol*\n\n' +
-        command_cmd + '```.graf``` \n' + desc_cmd + t15 + '_\n' + usage_cmd + '*.graf pinky;JulieMwol*\n\n' +
-        command_cmd + '```.2graf``` \n' + desc_cmd + t16 + '_\n' + usage_cmd + '*.2graf pinky;JulieMwol*\n\n' +       
-        command_cmd + '```.lion``` \n' + desc_cmd + t17 + '_\n' + usage_cmd + '*.lion pinky;JulieMwol*\n\n' +
-        command_cmd + '```.ice``` \n' + desc_cmd + t19 + '_\n' + usage_cmd + '*.ice JulieMwol*\n\n' +
-        command_cmd + '```.space``` \n' + desc_cmd + t20 + '_\n' + usage_cmd + '*.space Julie;Mwol*\n\n' +
-        command_cmd + '```.smoke``` \n' + desc_cmd + t21 + '_\n' + usage_cmd + '*.smoke JulieMwol*\n\n' + // Thanks for @Unique_hunter for base.
-        command_cmd + '```.glow``` \n' + desc_cmd + t23 + '_\n' + usage_cmd + '*.glow JulieMwol*\n\n' +
-        command_cmd + '```.fire``` \n' + desc_cmd + t25 + '_\n' + usage_cmd + '*.fire JulieMwol*\n\n' +
-        command_cmd + '```.harry``` \n' + desc_cmd + t26 + '_\n' + usage_cmd + '*.harry JulieMwol*\n\n' +
-        command_cmd + '```.cup``` \n' + desc_cmd + t29 + '_\n' + usage_cmd + '*.cup JulieMwol*\n\n' +
-        command_cmd + '```.cemetery``` \n' + desc_cmd + t28 + '_\n' + usage_cmd + '*.cemetery JulieMwol*\n\n' +
-        command_cmd + '```.glitch``` \n' + desc_cmd + t14 + '_\n' + usage_cmd + '*.glitch Julie;Mwol*\n\n'
+    const msg = command_cmd + '```.devil``` \n' + t1 + '_\n' + usage_cmd + '*.devil 🎭ɴᴇᴏᴛʀᴏ𝙭🪐*\n\n' +
+        command_cmd + '```.bear``` \n' + desc_cmd + t2 + '_\n' + usage_cmd + '*.bear 🎭ɴᴇᴏᴛʀᴏ𝙭🪐*\n\n' +
+        command_cmd + '```.wolf``` \n' + desc_cmd + t10 + '_\n' + usage_cmd + '*.wolf 🎭ɴᴇᴏᴛʀᴏ𝙭🪐*\n\n' +
+        command_cmd + '```.neon```\n' + desc_cmd + t3 + '_\n' + usage_cmd + '*.neon 🎭ɴᴇᴏᴛʀᴏ𝙭🪐*\n\n' +
+        command_cmd + '```.2neon``` \n' + desc_cmd + t4 + '_\n' + usage_cmd + '*.2neon 🎭ɴᴇᴏᴛʀᴏ𝙭🪐*\n\n' +
+        command_cmd + '```.3neon``` \n' + desc_cmd + t18 + '_\n' + usage_cmd + '*.3neon 🎭ɴᴇᴏᴛʀᴏ𝙭🪐*\n\n' +
+        command_cmd + '```.4neon``` \n' + desc_cmd + t27 + '_\n' + usage_cmd + '*.4neon 🎭ɴᴇᴏᴛʀᴏ𝙭🪐*\n\n' +
+        command_cmd + '```.light``` \n' + desc_cmd + t5 + '_\n' + usage_cmd + '*.light 🎭ɴᴇᴏᴛʀᴏ𝙭🪐*\n\n' +
+        command_cmd + '```.joker``` \n' + desc_cmd + t6 + '_\n' + usage_cmd + '*.joker 🎭ɴᴇᴏᴛʀᴏ𝙭🪐*\n\n' +
+        command_cmd + '```.ninja``` \n' + desc_cmd + t7 + '_\n' + usage_cmd + '*.ninja 🎭ɴᴇᴏᴛʀᴏ𝙭🪐*\n\n' +
+        command_cmd + '```.glitter``` \n' + desc_cmd + t8 + '_\n' + usage_cmd + '*.glitter 🎭ɴᴇᴏᴛʀᴏ𝙭🪐*\n\n' +
+        command_cmd + '```.bokeh``` \n' + desc_cmd + t9 + '_\n' + usage_cmd + '*.boken 🎭ɴᴇᴏᴛʀᴏ𝙭🪐*\n\n' +
+        command_cmd + '```.marvel``` \n' + desc_cmd + t11 + '_\n' + usage_cmd + '*.marvel 🎭ɴᴇᴏᴛʀᴏ𝙭🪐*\n\n' +
+        command_cmd + '```.2marvel``` \n' + desc_cmd + t12 + '_\n' + usage_cmd + '*.2marvel🎭ɴᴇᴏᴛʀᴏ𝙭🪐*\n\n' +
+        command_cmd + '```.avengers``` \n' + desc_cmd + t13 + '_\n' + usage_cmd + '*.avengers 🎭ɴᴇᴏᴛʀᴏ𝙭🪐*\n\n' +
+        command_cmd + '```.graf``` \n' + desc_cmd + t15 + '_\n' + usage_cmd + '*.graf 🎭ɴᴇᴏᴛʀᴏ𝙭🪐*\n\n' +
+        command_cmd + '```.2graf``` \n' + desc_cmd + t16 + '_\n' + usage_cmd + '*.2graf 🎭ɴᴇᴏᴛʀᴏ𝙭🪐*\n\n' +       
+        command_cmd + '```.lion``` \n' + desc_cmd + t17 + '_\n' + usage_cmd + '*.lion 🎭ɴᴇᴏᴛʀᴏ𝙭🪐*\n\n' +
+        command_cmd + '```.ice``` \n' + desc_cmd + t19 + '_\n' + usage_cmd + '*.ice 🎭ɴᴇᴏᴛʀᴏ𝙭🪐*\n\n' +
+        command_cmd + '```.space``` \n' + desc_cmd + t20 + '_\n' + usage_cmd + '*.space🎭ɴᴇᴏᴛʀᴏ𝙭🪐*\n\n' +
+        command_cmd + '```.smoke``` \n' + desc_cmd + t21 + '_\n' + usage_cmd + '*.smoke *🎭ɴᴇᴏᴛʀᴏ𝙭🪐**\n\n' + // Thanks for @TeenuhX for base.
+        command_cmd + '```.glow``` \n' + desc_cmd + t23 + '_\n' + usage_cmd + '*.glow 🎭ɴᴇᴏᴛʀᴏ𝙭🪐*\n\n' +
+        command_cmd + '```.fire``` \n' + desc_cmd + t25 + '_\n' + usage_cmd + '*.fire🎭ɴᴇᴏᴛʀᴏ𝙭🪐*\n\n' +
+        command_cmd + '```.harry``` \n' + desc_cmd + t26 + '_\n' + usage_cmd + '*.harry *🎭ɴᴇᴏᴛʀᴏ𝙭🪐**\n\n' +
+        command_cmd + '```.cup``` \n' + desc_cmd + t29 + '_\n' + usage_cmd + '*.cup *🎭ɴᴇᴏᴛʀᴏ𝙭🪐**\n\n' +
+        command_cmd + '```.cemetery``` \n' + desc_cmd + t28 + '_\n' + usage_cmd + '*.cemetery 🎭ɴᴇᴏᴛʀᴏ𝙭🪐*\n\n' +
+        command_cmd + '```.glitch``` \n' + desc_cmd + t14 + '_\n' + usage_cmd + '*.glitch🎭ɴᴇᴏᴛʀᴏ𝙭🪐*\n\n'
     await message.client.sendMessage(message.jid,msg, MessageType.text, { quoted: message.data })
 }));
 Asena.addCommand({pattern: 'devil ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
