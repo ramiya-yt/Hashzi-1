@@ -24,7 +24,7 @@ var ddd = ggg.toString('utf-8')
 clh.pay = ddd
 var desc_msg = ''
 if (Config.LANG == 'TR') desc_msg = 'Sınırsız erişime sahip textmaker araçlarını gösterir.'
-if (Config.LANG == 'EN') desc_msg = 'Shows textmaker tools with unlimited access.'
+if (Config.LANG == 'EN') desc_msg = '🙇⚡Shows textmaker tools with unlimited access.'
 if (Config.LANG == 'RU') desc_msg = 'Показывает инструменты для создания текстов с неограниченным доступом.'
 if (Config.LANG == 'AZ') desc_msg = 'Sınırsız girişi olan textmaker alətləri göstərir.'
 if (Config.LANG == 'PT') desc_msg = 'Mostra ferramentas textmaker com acesso ilimitado.'
@@ -35,7 +35,7 @@ if (Config.LANG == 'ES') desc_msg = 'Muestra herramientas de creación de textos
 if (os.userInfo().homedir !== clh.pay) return;
 let wk = Config.WORKTYPE == 'public' ? false : true
 
-Asena.addCommand({pattern: 'txttoimg$', fromMe: wk, desc: desc_msg}, (async (message, match) => {
+Asena.addCommand({pattern: 'textimg$', fromMe: wk, desc: desc_msg}, (async (message, match) => {
     var t1 = ''
     var t2 = ''
     var t3 = ''
@@ -134,7 +134,7 @@ Asena.addCommand({pattern: 'txttoimg$', fromMe: wk, desc: desc_msg}, (async (mes
         desc_cmd = '🤞*Açıklama:* _'
     } else { 
         usage_cmd = '🤞 Example : '
-        command_cmd = '🐼 Command : '
+        command_cmd = '👽Command : '
         desc_cmd = '🍀 Description : '
     }
     const msg = command_cmd + '```.devil``` \n' + t1 + '_\n' + usage_cmd + '*.devil JulieMwol*\n\n' +
@@ -629,7 +629,7 @@ Asena.addCommand({pattern: 'space ?(.*)', fromMe: wk, dontAddCommandList: true},
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/space.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/space.jpg'), MessageType.image, { caption: '```PublicBot```' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/space.jpg'), MessageType.image, { caption: '*🎭ɴᴇᴏᴛʀᴏ𝙭🪐*' })
               })
           } catch(err) { 
               console.log(err)
@@ -648,7 +648,7 @@ Asena.addCommand({pattern: 'smoke ?(.*)', fromMe: wk, dontAddCommandList: true},
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/smoke.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/smoke.jpg'), MessageType.image, { caption: '```PublicBot```' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/smoke.jpg'), MessageType.image, { caption: '*🎭ɴᴇᴏᴛʀᴏ𝙭🪐*' })
               })
           } catch(err) { 
               console.log(err)
@@ -663,7 +663,7 @@ Asena.addCommand({pattern: 'glow ?(.*)', fromMe: wk, dontAddCommandList: true}, 
     };
     var uri = encodeURI(match[1])
     await download(`https://api.xteam.xyz/photooxy/neonlight?text=${uri}&APIKEY=da5fb2b73ae3e451`, '/root/WhatsAsenaDuplicated/glowttp.jpg', async() => {                          
-        await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/glowttp.jpg'), MessageType.image, { caption: '```PublicBot```' })
+        await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/glowttp.jpg'), MessageType.image, { caption: '*🎭ɴᴇᴏᴛʀᴏ𝙭🪐*' })
     })
 }));
 Asena.addCommand({pattern: 'fire ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
@@ -678,7 +678,7 @@ Asena.addCommand({pattern: 'fire ?(.*)', fromMe: wk, dontAddCommandList: true}, 
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/tfire.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/tfire.jpg'), MessageType.image, { caption: '```PublicBot```' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/tfire.jpg'), MessageType.image, { caption: '*🎭ɴᴇᴏᴛʀᴏ𝙭🪐*' })
               })
           } catch(err) { 
               console.log(err)
@@ -697,7 +697,7 @@ Asena.addCommand({pattern: 'harry ?(.*)', fromMe: wk, dontAddCommandList: true},
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/hp.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/hp.jpg'), MessageType.image, { caption: 'PINKY' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/hp.jpg'), MessageType.image, { caption: '*🎭ɴᴇᴏᴛʀᴏ𝙭🪐*' })
               })
           } catch(err) { 
               console.log(err)
@@ -716,7 +716,7 @@ Asena.addCommand({pattern: '4neon ?(.*)', fromMe: wk, dontAddCommandList: true},
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/t4n.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/t4n.jpg'), MessageType.image, { caption: '```PublicBot```' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/t4n.jpg'), MessageType.image, { caption: '*🎭ɴᴇᴏᴛʀᴏ𝙭🪐*' })
               })
           } catch(err) { 
               console.log(err)
@@ -735,7 +735,7 @@ Asena.addCommand({pattern: 'cemetery ?(.*)', fromMe: wk, dontAddCommandList: tru
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/cmth.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/cmth.jpg'), MessageType.image, { caption: '```PublicBot```' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/cmth.jpg'), MessageType.image, { caption: '*🎭ɴᴇᴏᴛʀᴏ𝙭🪐*' })
               })
           } catch(err) { 
               console.log(err)
@@ -754,7 +754,7 @@ Asena.addCommand({pattern: 'cup ?(.*)', fromMe: wk, dontAddCommandList: true}, (
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/cup.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/cup.jpg'), MessageType.image, { caption: '```PublicBot```' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/cup.jpg'), MessageType.image, { caption: '*🎭ɴᴇᴏᴛʀᴏ𝙭🪐*' })
               })
           } catch(err) { 
               console.log(err)
