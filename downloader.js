@@ -4,14 +4,14 @@ const got = require('got');
 const fs = require('fs');
 const axios = require('axios');
 const { errorMessage, infoMessage } = require('../helpers');
-const IG_DESC = "⚡Downloads Image/Video From Instagram"
-const NEED_WORD = "⚡Must Enter a link"
+const IG_DESC = "Downloads Image/Video From Instagram"
+const NEED_WORD = "👽Must Enter a link"
 const FBDESC = "⚡Downloads Video From FaceBook"
-const LOADING = "⚡Downloading the Video..."
-const NOT_FOUNDFB = "👽Video Not Found"
+const LOADING = "©Downloading the Video..."
+const NOT_FOUNDFB = "🙇Video Not Found"
 const CAPTION = "Caption"
 
-Asena.addCommand({ pattern: 'ig ?(.*)', fromMe: false, desc: IG_DESC}, async (message, match) => {
+Asena.addCommand({ pattern: 'ig ?(.*)', fromMe: true, desc: IG_DESC}, async (message, match) => {
 
     const userName = match[1]
 
@@ -32,17 +32,17 @@ Asena.addCommand({ pattern: 'ig ?(.*)', fromMe: false, desc: IG_DESC}, async (me
         const msg = `${type}`
 
 	 if (msg === 'image') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
-          caption: "Made By WhatsAsenaPublic"
+          caption: "Made By *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*"
         })}
 		 	 
 	if (msg === 'video') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {
-          caption: "Made By WhatsAsenaPublic"
+          caption: "*🎭ɴᴇᴏᴛʀᴏ𝙭🪐*"
         })}
 	
         
       })
       .catch(
-        async (err) => await message.sendMessage(errorMessage("Invaild Link, Please Enter a Vaild Instagram Link")),
+        async (err) => await message.sendMessage(errorMessage("🙇Invaild Link, Please Enter a Vaild Instagram Link🙂")),
       )
   },
 )
@@ -50,7 +50,7 @@ Asena.addCommand({ pattern: 'ig ?(.*)', fromMe: false, desc: IG_DESC}, async (me
 
 
 
-Asena.addCommand({ pattern: 'fb ?(.*)', fromMe: false, desc: FBDESC }, async (message, match) => {
+Asena.addCommand({ pattern: 'fb ?(.*)', fromMe: true, desc: FBDESC }, async (message, match) => {
 
     const userName = match[1]
 
@@ -71,7 +71,7 @@ Asena.addCommand({ pattern: 'fb ?(.*)', fromMe: false, desc: FBDESC }, async (me
         const msg = `*${CAPTION}*: ${judul}`
 
         await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {
-          caption: "Made By "
+          caption: "Made By *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*"
         })
       })
       .catch(
