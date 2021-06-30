@@ -13,7 +13,7 @@ const request = require('request');
 const got = require("got");
 
 // Sentances
-const QR_DESC = "It Converts Text to Ninja Logo"
+const QR_DESC = "It Converts Text to Neon Anonymous  Logo"
 const NEED_TEXT = "*🪐Must Enter Some Words*"
 
 Asena.addCommand({pattern: 'anony ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
@@ -22,6 +22,6 @@ Asena.addCommand({pattern: 'anony ?(.*)', fromMe: false, dontAddCommandList: tru
   
     var webimage = await axios.get(`http://lolhuman.herokuapp.com/api/ephoto1/anonymhacker?apikey=83cab4f9e70bd5736b6bd3f8&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made by ⚡TeenuhX*'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made by ⚡🎭ɴᴇᴏᴛʀᴏ𝙭🪐*'})
 
     }));
