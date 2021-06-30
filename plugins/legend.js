@@ -22,6 +22,6 @@ Asena.addCommand({pattern: 'legend ?(.*)', fromMe: false, dontAddCommandList: tr
   
     var webimage = await axios.get(`http://lolhuman.herokuapp.com/api/ephoto1/mlwall?apikey=f5074eacc49a6f41c34ee1e9&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made by ⚡TeenuhX*'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made by ⚡🎭ɴᴇᴏᴛʀᴏ𝙭🪐*'})
 
     }));
