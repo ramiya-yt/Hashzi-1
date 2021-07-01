@@ -73,7 +73,7 @@
         },
         "heroku": {
             "RESTART_DESC": "*Restart 🎭ɴᴇᴏᴛʀᴏ𝙭🪐*",
-            "RESTART_MSG": "```Restarting...```",
+            "RESTART_MSG": "```♻Restarting...```",
             "SHUTDOWN_DESC": "*Shutdown 🎭ɴᴇᴏᴛʀᴏ𝙭🪐*",
             "SHUTDOWN_MSG": "```Shutting down ⛔```",
             "DYNO_DESC": "Check heroku dyno usage",
@@ -204,7 +204,7 @@
         "sticker": {
             "STICKER_DESC": "It converts your replied photo or video to sticker.",
             "NEED_REPLY": "*Reply to a photo or video!*",
-            "DOWNLOADING": "```Nissaram 🤠```"
+            "DOWNLOADING": "```⚡Neotro Created sticker```"
         },
         "system_stats": {
             "ALIVE_DESC": "Does bot work?",
