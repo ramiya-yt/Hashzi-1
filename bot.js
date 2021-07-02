@@ -793,7 +793,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                             }
                             else {
                                 await conn.sendMessage(conn.user.jid, '*-- ERROR REPORT [🎭ɴᴇᴏᴛʀᴏ𝙭🪐] --*' + 
-                                    '\n*JulieMwol an error has occurred!*'+
+                                    '\n*🎭ɴᴇᴏᴛʀᴏ𝙭🪐 an error has occurred!*'+
                                     '\n*This error log may include your number or the number of an opponent. Please be careful with it!*' +
                                     '\n*You can write to our Telegram group for help.*' +
                                     '\n*Aslo you can join our support group:* https://chat.whatsapp.com/GTgqgMTo7FoJ1GqdijshsX' +
@@ -920,7 +920,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                                 }
                                 else {
                                     return await conn.sendMessage(conn.user.jid, '*🙇🏻 Sorry, I Couldnt Read This Error! 🙇🏻*' +
-                                        '\n_You can write to our support group for more help https://chat.whatsapp.com/GTgqgMTo7FoJ1GqdijshsX._'
+                                        '\n_You can write to our support group for more help https://chat.whatsapp.com/GTgqgMTo7FoJ1GqdijshsX'
                                         , MessageType.text
                                     );
                                 }    
