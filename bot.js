@@ -396,7 +396,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                 if (config.FULLEVA == 'true') {
                     await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
                 } else {
-                    await conn.sendMessage(conn.user.jid, '\n*🎭ɴᴇᴏᴛʀᴏ𝙭🪐* *Working as Public!👽*\n', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '\n*🎭ɴᴇᴏᴛʀᴏ𝙭🪐* *Working as Public!👽*\n▷ඔබේ බොට් Public ලෙස ක්‍රියා කරයි\n▷එය වෙනස් කිරීමට .setvar WORK_TYPE:private\nමෙය උබෙ සුරැකි පණිවිඩ ලැබෙන කාඩයයි\nමෙහි විධාන භාවිතයෙන් වලකින්න\nයම් ගැටලුවක් ඇතිනම් සහය සමූහ වෙත Join වෙන්න\n*Thank For Using Neotro🎭සහය සමූහය: https://chat.whatsapp.com/GTgqgMTo7FoJ1GqdijshsX*', MessageType.text);
                 }               
                 await git.fetch();
                 var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
@@ -583,7 +583,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
         // ==================== End Blocked Chats ====================
 
         // ==================== Events ====================
-        events.commands.map(
+        events.commands.map
             async (command) =>  {
                 if (msg.message && msg.message.imageMessage && msg.message.imageMessage.caption) {
                     var text_msg = msg.message.imageMessage.caption;
@@ -792,12 +792,12 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                                 }
                             }
                             else {
-                                await conn.sendMessage(conn.user.jid, '*-- ERROR REPORT [🎭ɴᴇᴏᴛʀᴏ𝙭🪐] --*' + 
-                                    '\n*🎭ɴᴇᴏᴛʀᴏ𝙭🪐 an error has occurred!*'+
-                                    '\n*This error log may include your number or the number of an opponent. Please be careful with it!*' +
-                                    '\n*You can write to our Telegram group for help.*' +
-                                    '\n*Aslo you can join our support group:* https://chat.whatsapp.com/GTgqgMTo7FoJ1GqdijshsX' +
-                                    '\n*This message should have gone to your number (saved messages).*\n\n' +
+                                await conn.sendMessage(conn.user.jid, '*-- බොට් වාර්තාව [🎭ɴᴇᴏᴛʀᴏ𝙭🪐] --*' + 
+                                    '\n*🎭ɴᴇᴏᴛʀᴏ𝙭🪐 ඔබේ බොට් නිසි ලෙස ක්‍රියා කරයි!*'+
+                                    '\n*විධාන ගැටලු පිළිබද තොරතුරු මෙයට ලැබේ. මෙහි පණිවිඩ පිළිබද අවධානයෙන් සිටින්න!*' +
+                                    '\n*ඔබට යම්ගැටලුවක් ඇත්නම් සහය සමූහ වෙත එකතු වෙන්න.*' +
+                                    '\n*අලුත් තොරතුරු දැනගැනීමට එකතු වන්න සමූහය:* https://chat.whatsapp.com/GTgqgMTo7FoJ1GqdijshsX' +
+                                    '\n*මෙය ඔබෙ සුරැකි පණිවිඩ ලැබෙන Chat කාඩයයි.මෙහි Command භාවිතයෙන් වලකින්න (saved messages).*\n\n' +
                                     '*Error:* ```' + error + '```\n\n'
                                     , MessageType.text, {detectLinks: false}
                                 );
