@@ -19,10 +19,6 @@ if (Config.WORKTYPE == 'private') {
         
     }));
 
-
-
-
-
     Asena.addCommand({ pattern: 'mug ?(.*)', fromMe: true,dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
