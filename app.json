@@ -108,6 +108,11 @@
             "required": false,
             "value": "\n*🎭ɴᴇᴏᴛʀᴏ𝙭🪐 ʙᴏᴛ* \n *Bang!! Bang!! Im Alive Now\n*🔥Version : -v5.3 Global Stable*\n*🔥Branch :  Vanzino*\n*➞𝐓ᴇᴇɴᴜ𝐗↺*\n\*⚡🙇Support group:https://chat.whatsapp.com/GTgqgMTo7FoJ1GqdijshsX*\n\n*Thank For using 🎭ɴᴇᴏᴛʀᴏ𝙭🪐*"
         },
+        "WELCOME_LOGO": {
+            "description": "Welcome message video වෙනස් කිරීම සඳහා ඔබගේ video link පහත සඳහන් කරන්න.",
+            "required": true,
+            "value": "https://tinyurl.com/queenamdi-welcome"
+        },
         "BAN_MESSAGE": {
             "description": "Customizable Ban Message! Use => default, to change back.",
             "required": false,
