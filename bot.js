@@ -552,7 +552,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
             if (gb !== false) {
                 let pp
                 try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
-                await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
+                await axios.get(config.WELCOME_LOGO, {responseType: 'arraybuffer'}).then(async (res) => {
                 await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); });
             }
             return;
