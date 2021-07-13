@@ -12,7 +12,7 @@ const Ln = "*▷🎭ɴᴇᴏᴛʀᴏ-𝙭🪐මීම් ලැයිස්ත�
 
 if (Config.WORKTYPE == 'private') {
     
-      Asena.addCommand({pattern: 'mmpack', fromMe: true, desc: Ln,}, (async (message, match) => {
+      Asena.addCommand({pattern: 'not3', fromMe: true, desc: Ln,}, (async (message, match) => {
 
     await message.client.sendMessage(
   
