@@ -110,7 +110,7 @@ Asena.addCommand({ pattern: 'asai ?(.*)', fromMe: true, dontAddCommandList: true
 
     }));
     
-Asena.addCommand({ pattern: 'wow ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+Asena.addCommand({ pattern: 'wow ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -120,7 +120,7 @@ Asena.addCommand({ pattern: 'wow ?(.*)', fromMe: false, dontAddCommandList: true
 
     }));
    
-Asena.addCommand({ pattern: 'hapo ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+Asena.addCommand({ pattern: 'hapo ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -130,7 +130,7 @@ Asena.addCommand({ pattern: 'hapo ?(.*)', fromMe: false, dontAddCommandList: tru
 
     }));
   
-Asena.addCommand({ pattern: 'anura ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+Asena.addCommand({ pattern: 'anura ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -140,7 +140,7 @@ Asena.addCommand({ pattern: 'anura ?(.*)', fromMe: false, dontAddCommandList: tr
 
     }));
 
-Asena.addCommand({ pattern: 'macn ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+Asena.addCommand({ pattern: 'macn ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -150,7 +150,7 @@ Asena.addCommand({ pattern: 'macn ?(.*)', fromMe: false, dontAddCommandList: tru
 
     }));
 
-Asena.addCommand({ pattern: 'babah ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+Asena.addCommand({ pattern: 'babah ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -160,7 +160,7 @@ Asena.addCommand({ pattern: 'babah ?(.*)', fromMe: false, dontAddCommandList: tr
 
     }));
 
-Asena.addCommand({ pattern: 'gemba ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+Asena.addCommand({ pattern: 'gemba ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -170,7 +170,7 @@ Asena.addCommand({ pattern: 'gemba ?(.*)', fromMe: false, dontAddCommandList: tr
 
     }));
 
-Asena.addCommand({ pattern: 'nah ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+Asena.addCommand({ pattern: 'nah ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -180,7 +180,7 @@ Asena.addCommand({ pattern: 'nah ?(.*)', fromMe: false, dontAddCommandList: true
 
     }));
 
-Asena.addCommand({ pattern: 'kaluhutta ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+Asena.addCommand({ pattern: 'kaluhutta ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
