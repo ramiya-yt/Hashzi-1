@@ -7,8 +7,8 @@ const fs = require('fs');
 const axios = require('axios');
 const Config = require('../config');
 const ll ="*Need some Word*"
-const Ln = "*▷🎭ɴᴇᴏᴛʀᴏ-𝙭🪐මීම් ලැයිස්තුව ඔබට අවශ්‍ය ලෙස මීම්ස් සකසා ගැනීමට◁* "
- const code = "*╔═════◉ɴᴇᴏᴛʀᴏ◉═════╗*\n           🎭ɴᴇᴏᴛʀᴏ-𝙭🪐\n*❖═මීම් ලැයිස්තුව═❖*\n\n*💠.yasai       ❴your text❵*\n*💠.uddika    ❴your text❵*\n*💠.aah          ❴your text❵*\n*💠.sir            ❴your text❵*\n*💠.my3         ❴your text❵*\n*💠.fuck         ❴your text❵*\n*💠.hii             ❴your text❵*\n*💠.asai          ❴your text❵*\n*💠.hapoi       ❴your text❵*\n*💠.anura       ❴your text❵*\n*💠.gemba       ❴your text❵*\n*💠.wow       ❴your text❵*\n*💠.hapo       ❴your text❵*\n*💠.babah       ❴your text❵*\n*💠.mcn       ❴your text❵*\n*💠.nah       ❴your text❵*\n*╚═══❖══▣══▣══❖═══╝*\n\n*▷Template  Credit: එ.මි.ස ¡v*"
+const Ln = "*▷🎭ɴᴇᴏᴛʀᴏ-𝙭🪐මීම් ලැයිස්තුව ඔබට අවශ්‍ය ලෙස මීම්ස් සකසා ගැනීමට🆙* "
+ const code = "*╔═════◉ɴᴇᴏᴛʀᴏ◉═════╗*\n           🎭ɴᴇᴏᴛʀᴏ-𝙭🪐\n*❖═මීම් ලැයිස්තුව═❖*\n\n*💠.yasai       ❴your text❵*\n*💠.uddika    ❴your text❵*\n*💠.aah          ❴your text❵*\n*💠.sir            ❴your text❵*\n*💠.my3         ❴your text❵*\n*💠.fuck         ❴your text❵*\n*💠.hii             ❴your text❵*\n*💠.asai          ❴your text❵*\n*💠.hapoi       ❴your text❵*\n*╚═══❖══▣══▣══❖═══╝*\n\n*▷Translate Credit: එ.මි.ස ¡v*"
 
 if (Config.WORKTYPE == 'public') {
     
