@@ -27,7 +27,7 @@ if (Config.WORKTYPE == 'private') {
             
             var image = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "Test Im Alive Now"})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "                 *🎭NEOTRO-X* \n     *Bang!! Bang!! Im Alive Now*\n\n*◈Version* ● ▷5.2.0 Global Stable\n*◈Branch* ● ▷ Vancino\n*◈About* ● ▷ *🎭ɴᴇᴏᴛʀᴏ-𝙭🧞is an easy used WhatsApp robot. Watch the video to easily set up :|▸https://youtu.be/mcEeIspWOpY*\n*◯Owner* ▷ ▸https://Wa.me/+94766598862◂\n*Moders* ●▷\n◼ ᴄᴜɪᴢᴇʀ\n\n■ ᴛᴜʀᴜ\n■ᴍᴀꜱʜ-ᴢ\n\n*◈Main Group* ▷https://chat.whatsapp.com/ITlYi2teEXr0SvULyznQgX\n*◈Support group* ▷https://chat.whatsapp.com/LuLTEKm22fp8gv4ltCmKMo\n\n*ᴛʜᴀɴᴋ ꜰᴏʀ ᴜꜱɪɴɢ ɴᴇᴏᴛʀᴏ-𝘅🧞🎭*"})
 
     }
     else {
@@ -59,7 +59,7 @@ else if (Config.WORKTYPE == 'public') {
             
             var image = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "Test Im Alive"})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "                 *🎭NEOTRO-X* \n     *Bang!! Bang!! Im Alive Now*\n\n*◈Version* ● ▷5.2.0 Global Stable\n*◈Branch* ● ▷ Vancino\n*◈About* ● ▷ *🎭ɴᴇᴏᴛʀᴏ-𝙭🧞is an easy used WhatsApp robot. Watch the video to easily set up :|▸https://youtu.be/mcEeIspWOpY*\n*◯Owner* ▷ ▸https://Wa.me/+94766598862◂\n*Moders* ●▷\n◼ ᴄᴜɪᴢᴇʀ\n\n■ ᴛᴜʀᴜ\n■ᴍᴀꜱʜ-ᴢ\n\n*◈Main Group* ▷https://chat.whatsapp.com/ITlYi2teEXr0SvULyznQgX\n*◈Support group* ▷https://chat.whatsapp.com/LuLTEKm22fp8gv4ltCmKMo\n\n*ᴛʜᴀɴᴋ ꜰᴏʀ ᴜꜱɪɴɢ ɴᴇᴏᴛʀᴏ-𝘅🧞🎭*"})
 
     }
     else {
