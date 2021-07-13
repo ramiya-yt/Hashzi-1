@@ -161,7 +161,7 @@ ${chalk.blue.italic('🔄WhatsApp වෙත සම්බන්ධ වෙමි�
         });
 
         console.log(
-            chalk.green.bold('🆙Neotro-X🎭 Woing Now!  දැන් Bot ඔබට භාවිතා කළ හැකිය.')
+            chalk.green.bold('🆙Neotro-X🎭 Working Now!  දැන් Bot ඔබට භාවිතා කළ හැකිය.')
         );
         await new Promise(r => setTimeout(r, 1100));
 
