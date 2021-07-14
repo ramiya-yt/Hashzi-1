@@ -140,7 +140,7 @@ Asena.addCommand({pattern: '3dtext ?(.*)', fromMe: false, dontAddCommandList: tr
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/text3d?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Made by WhatsAsenaPublic'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*'})
 
    }));
 
@@ -150,7 +150,7 @@ Asena.addCommand({pattern: 'nfire ?(.*)', fromMe: false, dontAddCommandList: tru
 
     var webimage = await axios.get(`https://api.zeks.xyz/api/tfire?apikey=odsMYXx67ZhT38w5hp5mgRKO8En&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Made by WhatsAsenaPublic'})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*'})
 
     }));
 
@@ -160,7 +160,7 @@ Asena.addCommand({pattern: 'ninjalogo ?(.*)', fromMe: false, dontAddCommandList:
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/gaming?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Made by WhatsAsenaPublic'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*'})
 
     }));
 
