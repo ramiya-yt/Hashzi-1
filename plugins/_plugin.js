@@ -18,8 +18,8 @@ const Language = require('../language');
 const Lang = Language.getString('_plugin');
 const NLang = Language.getString('updater');
 
-let msg = Config.LANG == 'TR' || Config.LANG == 'AZ' ? '*Bu Plugin Resmi Olarak Onaylanmıştır!* ✅' : '*This Plugin is Officially Approved!* ✅'
-let inmsg = Config.LANG == 'TR' || Config.LANG == 'AZ' ? '*Bu Plugin Resmi Değildir!* ❌' : '*This Plugin isn\'t Officially Approved!* ❌'
+let msg = Config.LANG == 'TR' || Config.LANG == 'AZ' ? '*Bu Plugin Resmi Olarak Onaylanmıştır!* ✅' : '*Neotro වෙතින් අනුමත කරන ලද ප්ලගීනයකි.* ✅'
+let inmsg = Config.LANG == 'TR' || Config.LANG == 'AZ' ? '*Bu Plugin Resmi Değildir!* ❌' : '*අනුමත නොකරන ලද ප්ලගීනයක් ඉවත් කරන්න* ❌'
 
 const heroku = new Heroku({
     token: Config.HEROKU.API_KEY
@@ -29,7 +29,7 @@ const heroku = new Heroku({
 let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
 Asena.addCommand({pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC, warn: Lang.WARN}, (async (message, match) => {
-    if (match[1] === '') return await message.sendMessage(Lang.NEED_URL + '.install https://gist.github.com/phaticusthiccy/4232b1c8c4734e1f06c3d991149c6fbd')
+    if (match[1] === '') return await message.sendMessage(Lang.NEED_URL + '.install https://gist.github.com/Neotro23/4232b1c8c4734e1f06c3d991149c6fbd')
     try {
         var url = new URL(match[1]);
     } catch {
@@ -63,7 +63,7 @@ Asena.addCommand({pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DES
 
         await Db.installPlugin(url, plugin_name);
         await message.client.sendMessage(message.jid, Lang.INSTALLED, MessageType.text);
-        if (!match[1].includes('phaticusthiccy')) {
+        if (!match[1].includes('Neotro23')) {
             await new Promise(r => setTimeout(r, 400));
             await message.client.sendMessage(message.jid, Lang.UNOFF, MessageType.text);
         }
@@ -78,7 +78,7 @@ Asena.addCommand({pattern: 'plugin', fromMe: true, desc: Lang.PLUGIN_DESC }, (as
     } else {
         plugins.map(
             (plugin) => {
-                let vf = plugin.dataValues.url.includes('phaticusthiccy') ? msg : inmsg
+                let vf = plugin.dataValues.url.includes('Neotro23') ? msg : inmsg
                 mesaj += '```' + plugin.dataValues.name + '```: ' + plugin.dataValues.url + '\n' + vf + '\n\n';
             }
         );
