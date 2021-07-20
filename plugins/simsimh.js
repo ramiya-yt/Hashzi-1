@@ -28,9 +28,9 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'bot ?(.*)', fromMe: '+Config.AIBOT+', desc: Lang.BOT_DESC}, async (message, match) => {
+    Asena.addCommand({pattern: 'bot ?(.*)', fromMe: false, desc: Lang.BOT_DESC}, async (message, match) => {
 	if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
-	const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=en&cf=true`;
+	const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=en&cf='+Config.AIBOT+'`;
 	try {
 		const response = await got(url);
 		const json = JSON.parse(response.body);
