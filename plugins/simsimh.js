@@ -19,7 +19,7 @@ const got = require('got');
 const Config = require('../config');
 
 const Language = require('../language');
-const Lang = Language.getString('simibot');
+const Lang = Language.getString('AIbot');
 
 const heroku = new Heroku({
     token: Config.HEROKU.API_KEY
