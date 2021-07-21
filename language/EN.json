@@ -554,6 +554,13 @@
             "ADON_SUCCESS": "```✅සාර්තකයි```",
             "ADON_INVALID": "```විධානය අවලංගුය.```",
             "NOT_AVAILABLE": "⛔Neotro-X chat bot අක්‍රිය කර ඇත."
+        },
+        "AsenaPlug": {
+            "SPO_DESC": "🆙",
+            "SPO_NEED": "🆙",
+            "SPO_DOWN": "🆙",
+            "SPO_UP": "🆙",
+            "SPO_ERR": "🆙"
         }
     }
 }
