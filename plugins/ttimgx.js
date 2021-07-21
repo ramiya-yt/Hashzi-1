@@ -224,7 +224,7 @@ Asena.addCommand({pattern: 'anony ?(.*)', fromMe: true, dontAddCommandList: true
 
     }));
 
-Asena.addCommand({pattern: 'vtext ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'vtext ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
 
@@ -234,7 +234,7 @@ Asena.addCommand({pattern: 'vtext ?(.*)', fromMe: false, dontAddCommandList: tru
 
     }));
 
-    Asena.addCommand({pattern: 'ptext ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+    Asena.addCommand({pattern: 'ptext ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
 
@@ -244,7 +244,7 @@ Asena.addCommand({pattern: 'vtext ?(.*)', fromMe: false, dontAddCommandList: tru
 
     }));
 
-    Asena.addCommand({pattern: 'colortext ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+    Asena.addCommand({pattern: 'colortext ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
 
