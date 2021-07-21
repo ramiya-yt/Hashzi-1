@@ -35,11 +35,6 @@
             "description": "COMMAND LIST එකට අවශ්‍ය නමක් දැමීමට",
             "required": false,
             "value": "⛔Neotro"
-       },
-        "BOT": {
-            "description": "COMMAND LIST එකට අවශ්‍ය නමක් දැමීමට",
-            "required": false,
-            "value": "ON"
         },
         "SEND_READ": {
             "description": "Bot message seen කළාද නැතිද යන්න පරිශීලකට පෙන්විය යුතුද?",
