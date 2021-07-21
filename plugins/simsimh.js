@@ -4,14 +4,6 @@ you may not use this file except in compliance with the License.
 WhatsAsenaDuplicated
 */
 
-/* Copyright (C) 2021 Queen Amdi.
-
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-
-Queen Amdi - Black Amda
-*/
-
 const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const Heroku = require('heroku-client');
@@ -27,7 +19,7 @@ const heroku = new Heroku({
 
 let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
-if (Config.AIBOT == 'true') {
+if (Config.AI_BOT == 'true') {
 	if (Config.WORKTYPE == 'private') {
 		Asena.addCommand({pattern: 'bot ?(.*)', fromMe: true, desc: Lang.BOT_DESC}, async (message, match) => {
 			if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
@@ -57,7 +49,7 @@ if (Config.AIBOT == 'true') {
 	}
 }
 
-else if (Config.AIBOT_BOT == 'false') {
+else if (Config.AI_BOT == 'false') {
 	if (Config.WORKTYPE == 'private') {
 		Asena.addCommand({pattern: 'bot ?(.*)', fromMe: true, desc: Lang.BOT_DESC}, async (message, match) => {
 			if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
