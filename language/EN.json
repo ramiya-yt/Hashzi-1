@@ -545,11 +545,11 @@
             "SPO_ERR": "කරුණාකර වලංගු spotify link ඇතුළත් කරන්න"
         },
         "AIbot":{
-            "BOT_DESC": "AI chat bot සමඟ කතාබස් කරන්න.",
+            "BOT_DESC": "AI chat bot.",
             "BOT": ":",
             "NOT_FOUNDAC": "*⛔Invaild Request*",
             "NEED_LOCATIONA": "*⛔Invaild Request*",
-            "ADON_DESC": "Neotro-X Chat bot සක්‍රිය / අක්‍රිය කිරීමට.\n⌨️ උදාහරණය: AI chat bot සක්‍රිය කිරීමට, .adon CHAT_BOT:true විධානය කරන්න.\nAI chat bot අක්‍රිය කිරීමට, .adon CHAT_BOT:false විධානය කරන්න.",
+            "ADON_DESC": "Neotro-X Chat bot සක්‍රිය / අක්‍රිය කිරීමට.\n⌨️ උදාහරණය: AI chat bot සක්‍රිය කිරීමට, .adon AI_BOT:true විධානය කරන්න.\nAI chat bot අක්‍රිය කිරීමට, .adon AI_BOT:false විධානය කරන්න.",
             "ADON_MISSING": "```විධානය අවලංගුය.```",
             "ADON_SUCCESS": "```✅සාර්තකයි```",
             "ADON_INVALID": "```විධානය අවලංගුය.```",
