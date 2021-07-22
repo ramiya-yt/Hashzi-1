@@ -47,6 +47,7 @@ module.exports = {
     HANDLERS: process.env.HANDLERS === undefined ? '^[.!;]' : process.env.HANDLERS,
     MENUTEXT: process.env.MENU === undefined ?'*🎭ɴᴇᴏᴛʀᴏ𝙭🪐*' : process.env.MENU,
     AI_BOT: process.env.AI_BOT === undefined ?'true' : process.env.AI_BOT,
+    ASENA_PLUG: process.env.ASENA_PLUG === undefined ?'🧞' : process.env.ASENA_PLUG,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
     BRANCH: 'master',
     HEROKU: {
