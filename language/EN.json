@@ -556,8 +556,8 @@
             "NOT_AVAILABLE": "⛔Neotro-X chat bot අක්‍රිය කර ඇත."
         },
         "AsenaPlug": {
-            "SPO_DESC": "🆙",
-            "SPO_NEED": "🆙",
+            "DELETING": "🧞messages deleting",
+            "Up": "🆙",
             "SPO_DOWN": "🆙",
             "SPO_UP": "🆙",
             "SPO_ERR": "🆙"
