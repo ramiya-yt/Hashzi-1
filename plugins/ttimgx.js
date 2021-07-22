@@ -254,4 +254,16 @@ Asena.addCommand({pattern: 'vtext ?(.*)', fromMe: true, dontAddCommandList: true
 
     }));
 
+Asena.addCommand({pattern: 'emoji ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+        
+    var uri = encodeURI(match[1])
+    
+    var ttinullimage = await axios.get('https://api.zeks.xyz/api/emoji-image?apikey=VI6j4t4wCbwoc6Deh5wgrJL2Kt1&emoji=' + uri, { responseType: 'arraybuffer' })
+    
+    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*🎭ɴᴇᴏᴛʀᴏ𝙭🪐*' })
+
+    }));
+
 }
