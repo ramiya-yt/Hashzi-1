@@ -1,5 +1,8 @@
 FROM fusuf/whatsasena:latest
-
+#ASENA COOMAND
+#HEROKU
+#API TOKEN
+#j
 RUN git clone https://github.com/Neotro23/Neotro /root/WhatsAsenaDuplicated
 WORKDIR /root/WhatsAsenaDuplicated/
 ENV TZ=Europe/Istanbul
