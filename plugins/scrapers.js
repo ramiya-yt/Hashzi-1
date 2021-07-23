@@ -450,16 +450,35 @@ if (config.WORKTYPE == 'private') {
     }
     Asena.addCommand({pattern: 'song ?(.*)', fromMe: true, desc: Lang.SONG_DESC}, (async (message, match) => { 
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text);    
-        let arama = await yts(match[1]);
-        arama = arama.all;
-        if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
-        var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text);
+        const userName = match[1]
 
-        let title = arama[0].title.replace(' ', '+');
-        let stream = ytdl(arama[0].videoId, {
-            quality: 'highestaudio',
-        });
+        if (!userName) return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text, {quoted: message.data})
+
+        await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text, {quoted: message.data})
+
+        await axios
+          .get(`https://api.lolhuman.xyz/api/ytplay2?apikey=2270813be0bf2e3fbf0415cc&query=${userName}`)
+          .then(async (response) => {
+            const {
+              audio,
+              title,
+            } = response.data.result
+            const {
+                status,
+              } = response.data
+
+            const profileBuffer = await axios.get(audio, {responseType: 'arraybuffer'})
+
+            const msg = `${status}`
+
+      if (msg === '500') { await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text)}
+          
+      if (msg === '200') { 
+        await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text, {quoted: message.data});
+        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.document, {filename: title + '.mp3', mimetype: Mimetype.mp4Audio})
+        }
+          })
+    }));
     
         got.stream(arama[0].image).pipe(fs.createWriteStream(title + '.jpg'));
         ffmpeg(stream)
