@@ -20,9 +20,9 @@ if (Config.WORKTYPE == 'private') {
 
         const link = match[1]
     
-        if (!link) return await message.client.sendMessage(message.jid,Lang.SPO_NEED,MessageType.text)
+        if (!link) return await message.client.sendMessage.reply(message.jid,Lang.SPO_NEED,MessageType.text)
 
-        await message.client.sendMessage(message.jid,Lang.SPO_DOWN,MessageType.text)
+        await message.client.sendMessage.reply(message.jid,Lang.SPO_DOWN,MessageType.text)
     
         await axios
           .get(`https://lolhuman.herokuapp.com/api/spotify?apikey=e1ee2b3d3b00e58f2511ad95&url=${link}`)
@@ -33,8 +33,8 @@ if (Config.WORKTYPE == 'private') {
     
             const profileBuffer = await axios.get(link, {responseType: 'arraybuffer'})
     
-            await message.client.sendMessage(message.jid,Lang.SPO_UP,MessageType.text);
-            await message.client.sendMessage(message.jid,Buffer.from(profileBuffer.data), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false})
+            await message.client.sendMessage.reply(message.jid,Lang.SPO_UP,MessageType.text);
+            await message.client.sendMessage.reply(message.jid,Buffer.from(profileBuffer.data), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false})
         })
       },
     )
@@ -45,9 +45,9 @@ else if (Config.WORKTYPE == 'public') {
 
         const link = match[1]
     
-        if (!link) return await message.client.sendMessage(message.jid,Lang.SPO_NEED,MessageType.text, {quoted: message.data})
+        if (!link) return await message.client.sendMessage.reply(message.jid,Lang.SPO_NEED,MessageType.text, {quoted: message.data})
     
-        await message.client.sendMessage(message.jid,Lang.SPO_DOWN,MessageType.text, {quoted: message.data})
+        await message.client.sendMessage.reply(message.jid,Lang.SPO_DOWN,MessageType.text, {quoted: message.data})
     
         await axios
           .get(`https://lolhuman.herokuapp.com/api/spotify?apikey=e1ee2b3d3b00e58f2511ad95&url=${link}`)
@@ -58,8 +58,8 @@ else if (Config.WORKTYPE == 'public') {
     
             const profileBuffer = await axios.get(link, {responseType: 'arraybuffer'})
     
-            await message.client.sendMessage(message.jid,Lang.SPO_UP,MessageType.text, {quoted: message.data});
-            await message.client.sendMessage(message.jid,Buffer.from(profileBuffer.data), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false})
+            await message.client.sendMessage.reply(message.jid,Lang.SPO_UP,MessageType.text, {quoted: message.data});
+            await message.client.sendMessage.reply(message.jid,Buffer.from(profileBuffer.data), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false})
         })
       },
     )
