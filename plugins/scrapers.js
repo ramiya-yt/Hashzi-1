@@ -944,8 +944,9 @@ else if (config.WORKTYPE == 'public') {
                 writer.addTag();
 
                 reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text, {quoted: message.data});
-                await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.document, {filename: title + '.mp3', mimetype: Mimetype.mp4Audio})
-            });
+                await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg'})
+        }
+          })
     }));
 
     Asena.addCommand({pattern: 'video ?(.*)', fromMe: false, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
