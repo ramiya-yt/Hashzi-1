@@ -944,7 +944,7 @@ else if (config.WORKTYPE == 'public') {
                 writer.addTag();
 
                 reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text, {quoted: message.data});
-                await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.document, {filename: title + '.mp3', Mimetype.mp3Audio, ptt: false});
+                await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.document, {filename: title + '.mp3', Mimetype.mp4Audio})
             });
     }));
 
