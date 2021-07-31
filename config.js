@@ -48,6 +48,8 @@ module.exports = {
     MENUTEXT: process.env.MENU === undefined ?'*🎭ɴᴇᴏᴛʀᴏ𝙭🪐*' : process.env.MENU,
     AI_BOT: process.env.AI_BOT === undefined ?'true' : process.env.AI_BOT,
     ASENA_PLUG: process.env.ASENA_PLUG === undefined ?'VI6j4t4wCbwoc6Deh5wgrJL2Kt1' : process.env.ASENA_PLUG,
+    SONG_DOWNLOAD: process.env.SONG_DOWNLOAD === undefined ?'Downloading Your song🧞' : process.env.SONG_DOWNLOAD,
+    SONG_UPLOAD: process.env.SONG_UPLOAD === undefined ?'🧚‍♀️uploading your song' : process.env.SONG_UPLOAD,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
     BRANCH: 'master',
     HEROKU: {
