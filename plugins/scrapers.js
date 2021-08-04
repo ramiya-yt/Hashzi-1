@@ -448,7 +448,7 @@ if (config.WORKTYPE == 'private') {
             await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true});
         }));
     }
-    Asena.addCommand({pattern: 'song ?(.*)', fromMe: true,  deleteCommand: false,  desc: Lang.SONG_DESC}, (async (message, match) => { 
+    Asena.addCommand({pattern: 'song ?(.*)', fromMe: true,  deleteCommand: true,  desc: Lang.SONG_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text);    
         let arama = await yts(match[1]);
