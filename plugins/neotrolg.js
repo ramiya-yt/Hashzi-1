@@ -6,7 +6,7 @@ const Config = require('../config');
 
 if (Config.WORKTYPE == 'private') {
 	
-Asena.addCommand({pattern: 'textimg', fromMe: true, deleteCommand: false,}, (async (message, match) => {
+Asena.addCommand({pattern: 'textimg', fromMe: true,}, (async (message, match) => {
 
 	        var r_text = new Array ();
 
@@ -23,7 +23,7 @@ await message.client.sendMessage(message.jid, Buffer.from(respoimage.data), Mess
 }
 else if (Config.WORKTYPE == 'public') {
 	
-	Asena.addCommand({pattern: 'textimg', fromMe: false, deleteCommand: false,}, (async (message, match) => {
+	Asena.addCommand({pattern: 'textimg', fromMe: false,}, (async (message, match) => {
 
 	        var r_text = new Array ();
 
