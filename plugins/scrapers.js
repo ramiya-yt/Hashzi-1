@@ -680,11 +680,11 @@ if (config.WORKTYPE == 'private') {
                 await message.reply(`Error : \n${err.message}`, MessageType.text)
             }
         }
-        else if (match[1] === "uk" || match[1] === "Uk" || match[1] === "UK" || match[1] === "United" || match[1].includes('kingdom') ) {
+        else if (match[1] === "uk" || match[1] === "Sl" || match[1] === "SL" || match[1] === Sri lanka" || match[1].includes('srilanka') ) {
             try{
-                const respo = await got("https://coronavirus-19-api.herokuapp.com/countries/UK").then(async ok  => {
+                const respo = await got("https://coronavirus-19-api.herokuapp.com/countries/Sri Lanka").then(async ok  => {
                     resp = JSON.parse(ok.body);
-                    await message.reply(`🇬🇧 *Datas for UK:*\n😷 *Total Cases:* ${resp.cases}\n🏥 *Daily Cases:* ${resp.todayCases}\n⚰️ *Total Deaths:* ${resp.deaths}\n☠️ *Daily Deaths:* ${resp.todayDeaths}\n💊 *Total Recovered:* ${resp.recovered}\n😷 *Active Cases:* ${resp.active}\n🆘 *Critical Cases:* ${resp.critical}\n🧪 *Total Test:* ${resp.totalTests}`);
+                    await message.reply(`*🇱🇰ශ්‍රී ලංකාවෙ දත්ත:*\n😷 *මුළු වාර්තාවීම්:* ${resp.cases}\n🏥 *අද දින වාර්තාවීම්:* ${resp.todayCases}\n⚰️ *මුළු මරණ:* ${resp.deaths}\n☠️ *අද දින මරණ:* ${resp.todayDeaths}\n💊 *සුව වූ ගණන:* ${resp.recovered}\n😷 *සක්‍රිය වාර්තාවීම්:* ${resp.active}\n🆘 *තහවුරු නොවූ වාර්තාවීම්:* ${resp.critical}\n🧪 *සම්පූර්ණ පරීක්ෂණ:* ${resp.totalTests}`);
 
                 });
 
