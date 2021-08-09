@@ -306,7 +306,7 @@ Asena.addCommand({pattern: 'sand ?(.*)', fromMe: false, dontAddCommandList: true
 
     }));
 
-Asena.addCommand({pattern: 'lava ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'lava ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
 
