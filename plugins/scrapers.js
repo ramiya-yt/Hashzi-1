@@ -644,7 +644,7 @@ if (config.WORKTYPE == 'private') {
             }
 
         }
-        else if (match[1] === "usa" || match[1] === "Usa" || match[1] === "USA" || match[1] === "america" || match[1] === "America") {
+        else if (match[1] === "sl" || match[1] === srilanka" || match[1] === "SL" || match[1] === "Srilanka" || match[1] === "SriLanka") {
             try{
                 const respo = await got("https://coronavirus-19-api.herokuapp.com/countries/USA").then(async ok  => {
                     resp = JSON.parse(ok.body);
@@ -1111,11 +1111,11 @@ else if (config.WORKTYPE == 'public') {
             }
 
         }
-        else if (match[1] === "usa" || match[1] === "Usa" || match[1] === "USA" || match[1] === "america" || match[1] === "America") {
+        else if (match[1] === "SL" || match[1] === "sl" || match[1] === "SriLanka" || match[1] === "srilanka" || match[1] === "Sl") {
             try{
-                const respo = await got("https://coronavirus-19-api.herokuapp.com/countries/USA").then(async ok  => {
+                const respo = await got("https://coronavirus-19-api.herokuapp.com/countries/Sri Lanka").then(async ok  => {
                     resp = JSON.parse(ok.body);
-                    await message.reply(`🇺🇲 *Datas for USA:*\n😷 *Total Cases:* ${resp.cases}\n🏥 *Daily Cases:* ${resp.todayCases}\n⚰️ *Total Deaths:* ${resp.deaths}\n☠️ *Daily Deaths:* ${resp.todayDeaths}\n💊 *Total Recovered:* ${resp.recovered}\n😷 *Active Cases:* ${resp.active}\n🆘 *Critical Cases:* ${resp.critical}\n🧪 *Total Test:* ${resp.totalTests}`);
+                    await message.reply(`🇱🇰 *ශ්‍රී ලංකාවෙ දත්ත:*\n😷 *සම්පූර්ණ වාර්තාවීම්:* ${resp.cases}\n🏥 *අද දින වාර්තාවීම්:* ${resp.todayCases}\n⚰️ *සම්පූර්ණ මරණ:* ${resp.deaths}\n☠️ *අද මරණ:* ${resp.todayDeaths}\n💊 *සම්පූර්ණ සුව වූ ප්‍රමාණය:* ${resp.recovered}\n😷 *දැනට තිබෙන වාර්තා:* ${resp.active}\n🆘 *නිළ නොලත් වාර්තා:* ${resp.critical}\n🧪 *සම්පුර්ණ පරීක්ෂණ:* ${resp.totalTests}`);
 
                 });
 
