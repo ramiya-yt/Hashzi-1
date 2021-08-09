@@ -266,5 +266,94 @@ Asena.addCommand({pattern: 'emoji ?(.*)', fromMe: false, dontAddCommandList: tru
 
     }));
 
-}
+Asena.addCommand({pattern: 'rock ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+
+    var webimage = await axios.get(`https://xteam.xyz/textpro/rock?text=${match[1]}&APIKEY=0aaf6f8151148cb2`, { responseType: 'arraybuffer' })
+
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*⚜Neutro-X Pro⚜*'})
+
+    }));
+
+Asena.addCommand({pattern: 'warface ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+
+    var webimage = await axios.get(`https://xteam.xyz/photooxy/warface?text=${match[1]}&APIKEY=0aaf6f8151148cb2`, { responseType: 'arraybuffer' })
+
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*⚜Neutro-X Pro⚜*'})
+
+    }));
+
+Asena.addCommand({pattern: 'sbanner ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+
+    var webimage = await axios.get(`https://xteam.xyz/photooxy/shinebannerlol?text=${match[1]}&APIKEY=0aaf6f8151148cb2`, { responseType: 'arraybuffer' })
+
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*⚜Neutro-X Pro⚜*'})
+
+    }));
+
+Asena.addCommand({pattern: 'sand ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+
+    var webimage = await axios.get(`https://xteam.xyz/textpro/sandwriting??text=${match[1]}&APIKEY=0aaf6f8151148cb2`, { responseType: 'arraybuffer' })
+
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*⚜Neutro-X Pro⚜*'})
+
+    }));
+
+Asena.addCommand({pattern: 'lava ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+
+    var webimage = await axios.get(`https://xteam.xyz/textpro/lava?text=${match[1]}&APIKEY=0aaf6f8151148cb2`, { responseType: 'arraybuffer' })
+
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*⚜Neutro-X Pro⚜*'})
+
+    }));
+
+Asena.addCommand({pattern: 'wmatrix ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+
+    var webimage = await axios.get(`https://xteam.xyz/photooxy/underwebmatrix?text=${match[1]}&APIKEY=0aaf6f8151148cb2`, { responseType: 'arraybuffer' })
+
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*⚜Neutro-X Pro⚜*'})
+
+    }));
+
+Asena.addCommand({pattern: 'mtm ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+
+    var webimage = await axios.get(`https://xteam.xyz/photooxy/multimaterial?text=${match[1]}&APIKEY=0aaf6f8151148cb2`, { responseType: 'arraybuffer' })
+
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*⚜Neutro-X Pro⚜*'})
+
+    }));
+
+Asena.addCommand({pattern: 'coverwatch ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+
+    var webimage = await axios.get(`https://xteam.xyz/photooxy/coveroverwatch?text=${match[1]}&APIKEY=0aaf6f8151148cb2`, { responseType: 'arraybuffer' })
+
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*⚜Neutro-X Pro⚜*'})
+
+    }));
+
+Asena.addCommand({pattern: 'silk ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+
+    var webimage = await axios.get(`https://xteam.xyz/photooxy/silk?text=${match[1]}&APIKEY=0aaf6f8151148cb2`, { responseType: 'arraybuffer' })
+
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*⚜Neutro-X Pro⚜*'})
+
+    }));
+
+}
