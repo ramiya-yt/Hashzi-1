@@ -89,7 +89,7 @@ Asena.addCommand({pattern: 'update now$', fromMe: true, desc: Lang.UPDATE_NOW_DE
                     exec('npm install').stderr.pipe(process.stderr);
                 } else if (err) {
                     await message.client.sendMessage(
-                        message.jid,'*❌ හෙරොකු API Key වෙනස් වී ඇත*\n*දෝෂ වාර්තාව:* ```' + err + '```', MessageType.text);
+                        message.jid,'*හෙරොකු API වෙනස් වී ඇත!*\n*♦:* ```' + err + '```', MessageType.text);
                 }
             }));
             await guncelleme.delete();
