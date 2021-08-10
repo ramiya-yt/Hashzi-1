@@ -565,7 +565,7 @@ if (config.WORKTYPE == 'private') {
         if (userName === '') return await message.client.sendMessage(message.jid, Glang.REPLY, MessageType.text)
 
         await axios
-          .get(`https://hadi-api.herokuapp.com/api/githubstalk?username=${pname}`)
+          .get(`https://hadi-api.herokuapp.com/api/githubstalk?username=${userName}`)
           .then(async (response) => {
 
             const {
@@ -1032,7 +1032,7 @@ else if (config.WORKTYPE == 'public') {
         if (userName === '') return await message.client.sendMessage(message.jid, Glang.REPLY, MessageType.text)
 
         await axios
-          .get(`https://hadi-api.herokuapp.com/api/githubstalk?username=${pname}`)
+          .get(`https://hadi-api.herokuapp.com/api/githubstalk?username=${userName}`)
           .then(async (response) => {
 
             const {
