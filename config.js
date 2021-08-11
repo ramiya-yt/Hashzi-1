@@ -49,6 +49,9 @@ module.exports = {
     COMMAND: process.env.COMMAND === undefined ?'neotro' : process.env.COMMAND,
     AI_BOT: process.env.AI_BOT === undefined ?'true' : process.env.AI_BOT,
     ASENA_PLUG: process.env.ASENA_PLUG === undefined ?'VI6j4t4wCbwoc6Deh5wgrJL2Kt1' : process.env.ASENA_PLUG,
+    NEOA: process.env.NEOA === undefined ?'VI6j4t4wCbwoc6Deh5wgrJL2Kt1' : process.env.NEOA,
+    NEOS: process.env.NEOS === undefined ?'VI6j4t4wCbwoc6Deh5wgrJL2Kt1' : process.env.NEOS,
+    NEOY: process.env.NEOY === undefined ?'VI6j4t4wCbwoc6Deh5wgrJL2Kt1' : process.env.NEOY,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
     BRANCH: 'master',
     HEROKU: {
