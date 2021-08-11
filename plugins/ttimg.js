@@ -194,7 +194,7 @@ Asena.addCommand({pattern: 'nsky ?(.*)', fromMe: false, dontAddCommandList: true
 
     }));
 
-Asena.addCommand({pattern: 'ytbutton ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'buttonyt ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
 
