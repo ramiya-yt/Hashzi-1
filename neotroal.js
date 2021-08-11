@@ -1,5 +1,5 @@
 /* උස්සන්න හදන්න එපා බේසික් සන්ස්ලා රිටන් දෙනවා
-/*
+*/
 
 const Asena = require('../events');
 const Config = require('../config');
