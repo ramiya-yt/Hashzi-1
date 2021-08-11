@@ -428,7 +428,7 @@ if (config.WORKTYPE == 'private') {
                 return;
     
             let 
-                LANG = 'ml',
+                LANG = 'en',
                 ttsMessage = match[1],
                 SPEED = 1.0
 
@@ -895,7 +895,7 @@ else if (config.WORKTYPE == 'public') {
             return;
     
         let 
-            LANG = 'ml',
+            LANG = 'en',
             ttsMessage = match[1],
             SPEED = 1.0
 
