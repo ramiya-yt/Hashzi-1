@@ -52,6 +52,9 @@ module.exports = {
     NEOA: process.env.NEOA === undefined ?'aca83a4354ac' : process.env.NEOA,
     NEOS: process.env.NEOS === undefined ?'zenzapi' : process.env.NEOS,
     NEOY: process.env.NEOY === undefined ?'xyz' : process.env.NEOY,
+    NY: process.env.NY === undefined ?'🙇' : process.env.NY,
+    NA: process.env.NA === undefined ?'🙇' : process.env.NA,
+    NS: process.env.NS === undefined ?'🙇' : process.env.NS,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
     BRANCH: 'master',
     HEROKU: {
