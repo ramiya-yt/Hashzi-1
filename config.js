@@ -55,6 +55,7 @@ module.exports = {
     NY: process.env.NY === undefined ?'🙇' : process.env.NY,
     NA: process.env.NA === undefined ?'🙇' : process.env.NA,
     NS: process.env.NS === undefined ?'🙇' : process.env.NS,
+    CAPTION_KEY: process.env.CAPTION_KEY === undefined ?'*🎭Neotro-X*' : process.env.CAPTION_KEY,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
     BRANCH: 'master',
     HEROKU: {
