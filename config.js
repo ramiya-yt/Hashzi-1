@@ -20,9 +20,9 @@ DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBU
 
 module.exports = {
     VERSION: 'v5.2.4 Global Stable',
-    HLOCK: "hadi-api",
-    ZLOCK: "zeks",
-    ZNLOCK: "zenzapi.xyz",
+    HLOCK: 'hadi-api',
+    ZLOCK: 'zeks',
+    ZNLOCK: 'zenzapi.xyz',
     CHANNEL: 'https://t.me/remasterplugin',
     SESSION: process.env.NEUTRO_SESSION === undefined ? '' : process.env.NEUTRO_SESSION,
     ANTİLİNK: process.env.ANTİ_LİNK === undefined ? 'false' : process.env.ANTİ_LİNK,
