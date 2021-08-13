@@ -20,7 +20,7 @@ DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBU
 
 module.exports = {
     VERSION: 'v5.2.4 Global Stable',
-    HLOCK: 'hadi-api',
+    HNLOCK: 'hadi-api',
     ZLOCK: 'zeks',
     ZNLOCK: 'zenzapi.xyz',
     CHANNEL: 'https://t.me/remasterplugin',
@@ -59,6 +59,7 @@ module.exports = {
     NA: process.env.NA === undefined ?'aca83a4354ac' : process.env.NA,
     NS: process.env.NS === undefined ?'zenzapi' : process.env.NS,
     CAPTION_KEY: process.env.CAPTION_KEY === undefined ?'*🎭Neotro-X*' : process.env.CAPTION_KEY,
+    HLOCK: process.env.HLOCK === undefined ?'hadi-api' : process.env.HLOCK,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
     BRANCH: 'master',
     HEROKU: {
