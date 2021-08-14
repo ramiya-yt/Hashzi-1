@@ -266,4 +266,64 @@ Asena.addCommand({pattern: 'emoji ?(.*)', fromMe: false, dontAddCommandList: tru
 
     }));
 
+Asena.addCommand({pattern: 'nsky ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+
+    var webimage = await axios.get(`https://api.${Config.ZLOCK}.xyz/api/skytext?apikey=${Config.ZA}&text=${match[1]}`, { responseType: 'arraybuffer' })
+
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*🎭ɴᴇᴏᴛʀᴏ𝙭🪐*'})
+
+    }));
+
+Asena.addCommand({pattern: 'silk ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+
+    var webimage = await axios.get(`https://api.${Config.ZLOCK}.xyz/api/silktext?apikey=${Config.ZA}&text=${match[1]}`, { responseType: 'arraybuffer' })
+
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*🎭ɴᴇᴏᴛʀᴏ𝙭🪐*'})
+
+    }));
+
+Asena.addCommand({pattern: 'sand ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+
+    var webimage = await axios.get(`https://api.${Config.ZLOCK}.xyz/api/sandw?apikey=${Config.ZA}&text=${match[1]}`, { responseType: 'arraybuffer' })
+
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*🎭ɴᴇᴏᴛʀᴏ𝙭🪐*'})
+
+    }));
+
+Asena.addCommand({pattern: 'glowtext ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+
+    var webimage = await axios.get(`https://api.${Config.ZLOCK}.xyz/api/glowtext?apikey=${Config.ZA}&text=${match[1]}`, { responseType: 'arraybuffer' })
+
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*🎭ɴᴇᴏᴛʀᴏ𝙭🪐*'})
+
+    }));
+
+Asena.addCommand({pattern: 'flametext ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+
+    var webimage = await axios.get(`https://api.${Config.ZLOCK}.xyz/api/flametext?apikey=${Config.ZA}&text=${match[1]}`, { responseType: 'arraybuffer' })
+
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*🎭ɴᴇᴏᴛʀᴏ𝙭🪐*'})
+
+    }));
+
+Asena.addCommand({pattern: 'flowertext ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+
+    var webimage = await axios.get(`https://api.${Config.ZLOCK}.xyz/api/flowertext?apikey=${Config.ZA}&text=${match[1]}`, { responseType: 'arraybuffer' })
+
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*🎭ɴᴇᴏᴛʀᴏ𝙭🪐*'})
+
+    }));
+
 }
