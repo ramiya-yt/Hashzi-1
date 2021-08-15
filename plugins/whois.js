@@ -1,3 +1,7 @@
+/* ආදරේ.......හ් තමරසා...තමරසා.. හිමින් සැරෙ ඇවිත් ඔයා මගේ කනට 
+කුදුරලා ගියේ ඔයා මගේ වෙනකාගෙවත් නොවේ කියා...ඉතින් අනේ
+*/
+
 const Asena = require('../events');
 const { MessageType, Mimetype, GroupSettingChange, MessageOptions } = require('@adiwajshing/baileys');
 const Axios = require('axios');
