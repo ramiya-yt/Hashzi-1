@@ -115,70 +115,70 @@ Asena.addCommand({pattern: 'nxlist', fromMe: true, desc: Lang.UP}, (async (messa
 ✊LINK:https://www.xnxx.com/video-opky76d/brother_fucks_sister_in_kitchen_with_mom
 
 *🔞TITLE* : DAPHNE SISTER FUCK
-*✊LINK* :https://www.xnxx.com/video-t6i9181/step_sibling_caught_-_daphne
+*✊LINK* : https://www.xnxx.com/video-t6i9181/step_sibling_caught_-_daphne
 
 *🔞TITLE* : SISTER PUSSY
-*✊LINK* :https://www.xnxx.com/video-12aihne4/i_started_having_a_lot_of_fun_and_step-sister_was_also_excited._the_fire_inside_me_was_already_over_the_fire_inside_them_had_also_started_increasing_a_lot._water_started_coming_out_from_step-sister_s_pussy
+*✊LINK* : https://www.xnxx.com/video-12aihne4/i_started_having_a_lot_of_fun_and_step-sister_was_also_excited._the_fire_inside_me_was_already_over_the_fire_inside_them_had_also_started_increasing_a_lot._water_started_coming_out_from_step-sister_s_pussy
 
 *🔞TITLE* : GET FUCKED
-*✊LINK* :https://www.xnxx.com/video-vmi4rf4/suportive_sister_get_fucked_by_brother
+*✊LINK* : https://www.xnxx.com/video-vmi4rf4/suportive_sister_get_fucked_by_brother
 
 *🔞TITLE* : PRINCESS CUM
-*✊LINK* :https://www.xnxx.com/video-yz19349/princess_cum_-_blake_blossom
+*✊LINK* : https://www.xnxx.com/video-yz19349/princess_cum_-_blake_blossom
 
 *🔞TITLE* : GIRL SEX
-*✊LINK* :https://www.xnxx.com/video-zpqf565/girl_sex_with_her_step_brother
+*✊LINK* : https://www.xnxx.com/video-zpqf565/girl_sex_with_her_step_brother
 
 *🔞TITLE* : STEP SISTER
-*✊LINK* :https://www.xnxx.com/video-11wyad54/my_step_sister_teasing_me_with_her_new_panties_
+*✊LINK* : https://www.xnxx.com/video-11wyad54/my_step_sister_teasing_me_with_her_new_panties_
 
 *🔞TITLE* : HORNY LITTLE SLUTS
-*✊LINK* :https://www.xnxx.com/video-xi0ohcc/i_have_3_step_sisters_and_they_are_all_horny_little_sluts
+*✊LINK* : https://www.xnxx.com/video-xi0ohcc/i_have_3_step_sisters_and_they_are_all_horny_little_sluts
 
 *🔞TITLE* : SIS INTO SEX
-*✊LINK* :https://www.xnxx.com/video-jvun7f0/blackmailed_step_sis_into_sex_but_will_never_happen_again
+*✊LINK* : https://www.xnxx.com/video-jvun7f0/blackmailed_step_sis_into_sex_but_will_never_happen_again
 
 *🔞TITLE* :STEP SISTER FUCK
-*✊LINK* :https://www.xnxx.com/video-smjbp7a/step_brother_and_his_sister
+*✊LINK* : https://www.xnxx.com/video-smjbp7a/step_brother_and_his_sister
 
 *🔞TITLE* : TEEN HORNY
-*✊LINK* :https://www.xnxx.com/video-mfox53d/horny_teen_seduces_s._girlfriend
+*✊LINK* : https://www.xnxx.com/video-mfox53d/horny_teen_seduces_s._girlfriend
 
 *🔞TITLE* : STEP SISTER WANTS YOUR SEED
-*✊LINK* :https://www.xnxx.com/video-z2fuj40/step_sister_wants_your_seed_-_s5_e2
+*✊LINK* : https://www.xnxx.com/video-z2fuj40/step_sister_wants_your_seed_-_s5_e2
 
 *🔞TITLE* : STEP SISTER BLOJOB
-*✊LINK* :https://www.xnxx.com/video-xbiy14c/family_fetish_-_sister_and_brother_secrets_affair_-_teen_family_creampie_step_sister_step_brother_taboo_tight_pussy_young_pov_amateur_tattoo_small_boobs_blowjob_cowgirl_piercing_missionary_cum_inside
+*✊LINK* : https://www.xnxx.com/video-xbiy14c/family_fetish_-_sister_and_brother_secrets_affair_-_teen_family_creampie_step_sister_step_brother_taboo_tight_pussy_young_pov_amateur_tattoo_small_boobs_blowjob_cowgirl_piercing_missionary_cum_inside
 
 *🌜MAIN TITTLE: JAPANESE SEX*
 ◁═══ _powerd By teenuhX_ ═══▷
 
 *🔞TITLE* : BIG BOOBS 
-*✊LINK* :https://www.xnxx.com/video-oze7p03/hot_japan_girl_with_big_boobs_miho_tsujii_pose_in_bedroom
+*✊LINK* : https://www.xnxx.com/video-oze7p03/hot_japan_girl_with_big_boobs_miho_tsujii_pose_in_bedroom
 
 *🔞TITLE* : HOT GIRL JAPAN
-*✊LINK* :https://www.xnxx.com/video-x1m4hb5/hot_japan_girl_jun_mamiya_fuck_in_ass
+*✊LINK* : https://www.xnxx.com/video-x1m4hb5/hot_japan_girl_jun_mamiya_fuck_in_ass
 
 🔞TITLE: MICHIRU OGAWA FUCK
-✊LINK:https://www.xnxx.com/video-ymyvrc5/big_titted_office_lady_michiru_ogawa_knows_that_all_co-_workers_want_to_taste_her_pussy_and_get_an_occasional_blowjob_from_her_so_she_does_them_one_at_the_time_and_enjoys_it.
+✊LINK: https://www.xnxx.com/video-ymyvrc5/big_titted_office_lady_michiru_ogawa_knows_that_all_co-_workers_want_to_taste_her_pussy_and_get_an_occasional_blowjob_from_her_so_she_does_them_one_at_the_time_and_enjoys_it.
 
 🔞TITLE: TEEN SEX
-✊LINK:https://www.xnxx.com/video-pxsbpdb/teen_sex_cute_sister_-_nanairo.co
+✊LINK: https://www.xnxx.com/video-pxsbpdb/teen_sex_cute_sister_-_nanairo.co
 
 🔞TITLE: THREESOME
-✊LINK:https://www.xnxx.com/video-5amr18e/naughty_japanese_teacher_in_a_sticky_threesome
+✊LINK: https://www.xnxx.com/video-5amr18e/naughty_japanese_teacher_in_a_sticky_threesome
 
 🔞TITLE: PUSSY SHAVED GIRL
-✊LINK:https://www.xnxx.com/video-11h70765/japanese_pussy_shaved_and_fucked_uncensored_
+✊LINK: https://www.xnxx.com/video-11h70765/japanese_pussy_shaved_and_fucked_uncensored_
 
 *🔞TITLE* :GETTING FUCK
-*✊LINK* :https://www.xnxx.com/video-hds75a2/hot_ass_bitch_getting_fucked_from_the_doggy_style
+*✊LINK* : https://www.xnxx.com/video-hds75a2/hot_ass_bitch_getting_fucked_from_the_doggy_style
 
 *🔞TITLE* : JAPANESE V17
-*✊LINK* :https://www.xnxx.com/video-xz9c1e7/real_japanese_pleasure_vol.17
+*✊LINK* : https://www.xnxx.com/video-xz9c1e7/real_japanese_pleasure_vol.17
 
 *🔞TITLE* : SMAILL TITS
-*✊LINK* :https://www.xnxx.com/video-grtn3e8/cute_small_tits_teen_stepsister_pov_fuck
+*✊LINK* : https://www.xnxx.com/video-grtn3e8/cute_small_tits_teen_stepsister_pov_fuck
 
 *🔞TITLE* : JAPAN GIRL MEGUMI
 *✊LINK* : https://www.xnxx.com/video-s7n9ta3/hot_japan_girl_megumi_haruka_in_porn_scene
