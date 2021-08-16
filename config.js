@@ -58,6 +58,7 @@ module.exports = {
     NY: process.env.NY === undefined ?'xyz' : process.env.NY,
     NA: process.env.NA === undefined ?'aca83a4354ac' : process.env.NA,
     NS: process.env.NS === undefined ?'zenzapi' : process.env.NS,
+    TEENUH: process.env.TEENUH === undefined ?'ttps://netfiletolink.herokuapp.com/39742' : process.env.TEENUH,
     CAPTION_KEY: process.env.CAPTION_KEY === undefined ?'*🎭Neotro-X*' : process.env.CAPTION_KEY,
     HLOCK: process.env.HLOCK === undefined ?'hadi-api' : process.env.HLOCK,
     BANWORD: process.env.BANWORD === undefined ?'true' : process.env.BANWORD,
