@@ -366,7 +366,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
         }
         if (config.WORKTYPE == 'public') {
       
-            if (config.LANG == 'TR' || config.LANG == 'AZ') {
+            if (config.LANG == 'SI' || config.LANG == 'AZ') {
                 if (config.FULLEVA == 'true') {
                     await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
                 } else {
@@ -421,7 +421,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
             }
         }
         else if (config.WORKTYPE == 'private') { 
-            if (config.LANG == 'TR' || config.LANG == 'AZ') { 
+            if (config.LANG == 'SI' || config.LANG == 'AZ') { 
                 if (config.FULLEVA == 'true') {
                     await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
                 } else {
@@ -476,7 +476,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
         }
         else if (config.WORKTYPE == ' private' || config.WORKTYPE == 'Private' || config.WORKTYPE == ' Private' || config.WORKTYPE == 'privaye' || config.WORKTYPE == ' privaye' || config.WORKTYPE == ' prigate' || config.WORKTYPE == 'prigate' || config.WORKTYPE == 'priavte' || config.WORKTYPE == ' priavte' || config.WORKTYPE == 'PRİVATE' || config.WORKTYPE == ' PRİVATE' || config.WORKTYPE == 'PRIVATE' || config.WORKTYPE == ' PRIVATE') {
 
-            if (config.LANG == 'TR' || config.LANG == 'AZ') {
+            if (config.LANG == 'SI' || config.LANG == 'AZ') {
 
                 await conn.sendMessage(
                     conn.user.jid,
@@ -501,7 +501,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
             }
         }
         else if (config.WORKTYPE == ' public' || config.WORKTYPE == 'Public' || config.WORKTYPE == ' Public' || config.WORKTYPE == 'publoc' || config.WORKTYPE == ' Publoc' || config.WORKTYPE == 'pubcli' || config.WORKTYPE == ' pubcli' || config.WORKTYPE == 'PUBLİC' || config.WORKTYPE == ' PUBLİC' || config.WORKTYPE == 'PUBLIC' || config.WORKTYPE == ' PUBLIC' || config.WORKTYPE == 'puvlic' || config.WORKTYPE == ' puvlic' || config.WORKTYPE == 'Puvlic' || config.WORKTYPE == ' Puvlic') {
-            if (config.LANG == 'TR' || config.LANG == 'AZ') {
+            if (config.LANG == 'SI' || config.LANG == 'AZ') {
                 await conn.sendMessage(
                     conn.user.jid,
                     '_Görünüşe Göre Public Moduna Geçmek İstiyorsun! Maalesef_ *WORK_TYPE* _Anahtarın Yanlış!_ \n_Merak Etme! Senin İçin Doğrusunu Bulmaya Çalışıyorum.._', MessageType.text
@@ -525,7 +525,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
             }
         }
         else {
-            if (config.LANG == 'TR' || config.LANG == 'AZ') {
+            if (config.LANG == 'SI' || config.LANG == 'AZ') {
                 return await conn.sendMessage(
                     conn.user.jid,
                     '_Girdiğin_ *WORK_TYPE* _Anahtarı Bulunamadı!_ \n_Lütfen_ ```.setvar WORK_TYPE:private``` _Yada_ ```.setvar WORK_TYPE:public``` _Komutunu Kullanın!_', MessageType.text
@@ -658,7 +658,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                         catch (error) {
                             if (config.NOLOG == 'true') return;
 
-                            if (config.LANG == 'TR' || config.LANG == 'AZ') {
+                            if (config.LANG == 'SI' || config.LANG == 'AZ') {
                                 await conn.sendMessage(conn.user.jid, '*-- HATA RAPORU [🎭Neotro-X] --*' + 
                                     '\n*WhatsAsena bir hata gerçekleşti!*'+
                                     '\n_Bu hata logunda numaranız veya karşı bir tarafın numarası olabilir. Lütfen buna dikkat edin!_' +
