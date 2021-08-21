@@ -1,9 +1,7 @@
-/* Copyright (C) 2020 Yusuf Usta.
-
+/* Copyright (C) 2021 TENUX-Neotro.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-
-WhatsAsena - Yusuf Usta
+NEOTROX - TEENUHX
 */
 
 const Asena = require('../events');
@@ -18,8 +16,8 @@ const Language = require('../language');
 const Lang = Language.getString('_plugin');
 const NLang = Language.getString('updater');
 
-let msg = Config.LANG == 'TR' || Config.LANG == 'AZ' ? '*Bu Plugin Resmi Olarak Onaylanmıştır!* ✅' : '*Neotro වෙතින් අනුමත කරන ලද ප්ලගීනයකි.* ✅'
-let inmsg = Config.LANG == 'TR' || Config.LANG == 'AZ' ? '*Bu Plugin Resmi Değildir!* ❌' : '*අනුමත නොකරන ලද ප්ලගීනයකි..* ❌'
+let msg = Config.LANG == 'SI' || Config.LANG == 'AZ' ? '*අනුමත කරනලද ප්ලගීනයකි..!* ✅' : '*Approved plugin.* ✅'
+let inmsg = Config.LANG == 'SI' || Config.LANG == 'AZ' ? '*අනුමත නොකරණ ලද ප්ලගීනකි..!* ❌' : '*Not Approved Plugin.* ❌'
 
 const heroku = new Heroku({
     token: Config.HEROKU.API_KEY
