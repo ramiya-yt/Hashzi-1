@@ -1,9 +1,7 @@
-/* Copyright (C) 2020 Yusuf Usta.
-
+/* Copyright (C) 2021 TENUX-Neotro.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-
-WhatsAsena - Yusuf Usta
+NEOTROX - TEENUHX
 */
 
 const Asena = require('../events');
@@ -18,8 +16,8 @@ const Language = require('../language');
 const Lang = Language.getString('_plugin');
 const NLang = Language.getString('updater');
 
-let msg = Config.LANG == 'TR' || Config.LANG == 'AZ' ? '*Bu Plugin Resmi Olarak Onaylanmıştır!* ✅' : '*Neotro වෙතින් අනුමත කරන ලද ප්ලගීනයකි.* ✅'
-let inmsg = Config.LANG == 'TR' || Config.LANG == 'AZ' ? '*Bu Plugin Resmi Değildir!* ❌' : '*අනුමත නොකරන ලද ප්ලගීනයක් ඉවත් කරන්න* ❌'
+let msg = Config.LANG == 'SI' || Config.LANG == 'AZ' ? '*Neotro වෙතින් අනුමත කරන ලද ප්ලගීනයකි.* ✅' : '*Officialy Approved* ✅'
+let inmsg = Config.LANG == 'SI' || Config.LANG == 'AZ' ? '*අනුමත නොකරන ලද ප්ලගීනයකි!* ❌' : '*Not Approved* ❌'
 
 const heroku = new Heroku({
     token: Config.HEROKU.API_KEY
@@ -29,7 +27,7 @@ const heroku = new Heroku({
 let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
 Asena.addCommand({pattern: 'pkg ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC, warn: Lang.WARN}, (async (message, match) => {
-    if (match[1] === '') return await message.sendMessage(Lang.NEED_URL + '.install https://gist.github.com/Neotro23/4232b1c8c4734e1f06c3d991149c6fbd')
+    if (match[1] === '') return await message.sendMessage(Lang.NEED_URL + '.pkg https://gist.github.com/Neotro23/4232b1c8c4734e1f06c3d991149c6fbd')
     try {
         var url = new URL(match[1]);
     } catch {
