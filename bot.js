@@ -489,7 +489,7 @@ ${chalk.blue.italic('🙇Connecting to Whatsapp..')}`);
             else {
                 await conn.sendMessage(
                     conn.user.jid,
-                    '_Looks like you need to switch to general mode! _ * WORK_TYPE * \ n_Don't worry! I try to find the truth for you._', MessageType.text
+                    '_Looks like you need to switch to general mode! _ * WORK_TYPE * \ n_Dont worry! I try to find the truth for you._', MessageType.text
                 );
                 await heroku.patch(baseURI + '/config-vars', {
                     body: {
@@ -513,7 +513,7 @@ ${chalk.blue.italic('🙇Connecting to Whatsapp..')}`);
             else {
                 await conn.sendMessage(
                     conn.user.jid,
-                    '_Looks like you need to switch to public mode! _ * WORK_TYPE * \ n_Don t worry! I try to find the truth for you._', MessageType.text
+                    '_Looks like you need to switch to public mode! _ * WORK_TYPE * \ n_Dont worry! I try to find the truth for you._', MessageType.text
                 );
                 await heroku.patch(baseURI + '/config-vars', {
                     body: {
