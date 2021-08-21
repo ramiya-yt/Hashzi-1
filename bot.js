@@ -85,7 +85,7 @@ async function whatsAsena () {
         var getGMTh = new Date().getHours()
         var getGMTm = new Date().getMinutes()
         await axios.get('https://gist.github.com/xneon2/4c6a4c4981b3b693cb141d6701246075/raw/').then(async (ann) => {
-            const { infotr, infoen, infoes, infopt, infoid, infoaz, infohi, infoml, inforu} = ann.data.announcements          
+            const { infotr, infoen, infoes, infopt, infoid, infoaz, infosi, infoml, inforu} = ann.data.announcements          
             if (infotr !== '' && config.LANG == 'TR') {
                 while (getGMTh == 19 && getGMTm == 1) { 
                     return conn.sendMessage(conn.user.jid, '[ ```Günlük Duyurular``` ]\n\n' + infotr.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
@@ -106,9 +106,9 @@ async function whatsAsena () {
                     return conn.sendMessage(conn.user.jid, '[ ```🎭Neotro-X Announcements🙇``` ]\n\n' + infoen.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
                 }
             }
-            else if (infohi !== '' && config.LANG == 'SI') {
+            else if (infosi !== '' && config.LANG == 'SI') {
                 while (getGMTh == 21 && getGMTm == 31) { 
-                    return conn.sendMessage(conn.user.jid, '[ ```दैनिक घोषणाएं``` ]\n\n' + infohi.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
+                    return conn.sendMessage(conn.user.jid, '[ ```🎭දවසේ නිවේදන🙇``` ]\n\n' + infohi.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
                 }
             }
             else if (infoml !== '' && config.LANG == 'ML') {
@@ -295,7 +295,7 @@ async function whatsAsena () {
     }
     conn.on ('open', async () => {
         console.log(
-            chalk.blueBright.italic('✅තොරතුරු යතාවත්කාලිනයි!')
+            chalk.blueBright.italic('🆙Information Updated!')
         );
         const authInfo = conn.base64EncodedAuthInfo();
         if (StrSes_Db.length < 1) {
@@ -308,14 +308,14 @@ async function whatsAsena () {
         console.log(`${chalk.green.bold('Neotro')}${chalk.blue.bold('X')}
 ${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
 
-${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමින්..')}`);
+${chalk.blue.italic('🙇Connecting to Whatsapp..')}`);
     });
     conn.on('credentials-updated', async () => {
         console.log(
-            chalk.green.bold('✅ සාර්ථකතයි!')
+            chalk.green.bold('✅ Success!')
         );
         console.log(
-            chalk.blueBright.italic('⬇️ප්ලගින් යතාවත්කාලින වෙමින්...')
+            chalk.blueBright.italic('⬇️Plugging updated...')
         );
         if (os.userInfo().homedir !== clh.pay) return;
         // ==================== External Plugins ====================
@@ -333,7 +333,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
         // ==================== End External Plugins ====================
 
         console.log(
-            chalk.blueBright.italic('⬇️ බාහිර ප්ලගින් ස්ථාපනය වෙමින්...')
+            chalk.blueBright.italic('⬇️External Plugging Updating...')
         );
 
         // ==================== Internal Plugins ====================
@@ -345,7 +345,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
         // ==================== End Internal Plugins ====================
 
         console.log(
-            chalk.green.bold('✅ සාර්ථකතකයි!')
+            chalk.green.bold('✅Success 🎭Neotro-X Working Now!')
         );
         if (os.userInfo().homedir !== clh.pay) return;
         await new Promise(r => setTimeout(r, 200));
@@ -370,7 +370,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                 if (config.FULLEVA == 'true') {
                     await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
                 } else {
-                    await conn.sendMessage(conn.user.jid, '*🎭Neotro-X Public Olarak Çalışıyor! 🙇*\n\n_Lütfen burada plugin denemesi yapmayın. Burası sizin LOG numaranızdır._\n_Herhangi bir sohbette komutları deneyebilirsiniz :)_\n\n*Botunuz herkese açık bir şekilde çalışmaktadır. Değiştirmek için* _.setvar WORK_TYPE:private_ *komutunu kullanın.*\n\n*🎭Neotro-X Kullandığın İçin Teşekkürler 💌*', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '*🎭Neotro-X As Public! 🙇*\n\n_මෙය ඔබගේ LOG අංකයයි..මෙහි විධාන භාවිතයෙන් වළකින්න._\n_ඔබට පුලුවන් වෙනත් ඕනෑම කතා බහක විධාන භාවිතා කිරීමට.. :)_\n\n*Botunuz herkese açık bir şekilde çalışmaktadır. Değiştirmek için* _.setvar WORK_TYPE:private_ *komutunu kullanın.*\n\n*🎭Neotro-X Kullandığın İçin Teşekkürler 💌*', MessageType.text);
                 }
                 await git.fetch();
                 var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
