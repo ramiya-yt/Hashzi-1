@@ -352,7 +352,7 @@ ${chalk.blue.italic('🙇Connecting to Whatsapp..')}`);
         let afwhasena = config.WORKTYPE == 'public' ? ' Public' : ' Private'
         console.log(chalk.bgGreen('🎭Neotro-X' + afwhasena));
         await new Promise(r => setTimeout(r, 500));
-        let EVA_ACTİON = config.LANG == 'TR' || config.LANG == 'AZ' ? '*🎭Neotro-X Chatbot Olarak Çalışıyor!* 🙇\n\n_Bu modun amacı botu tam fonksiyonel bir yapay zeka sohbet aracına çevirmektir._\n_Normal moda dönmek için_ *.fulleva off* _komutunu kullanabilirsiniz._\n\n*WhatsAsena Kullandığın İçin Teşekkürler 💌*\n    *- Eva*' : '*🎭Neotro-X Working as a Chatbot! 🙇*\n\n_The purpose of this mod is to turn the bot into a fully functional AI chatbot._\n_You can use the_ *.eva off* _command to return to normal mode._\n\n*Thanks For Using 🎭Neotro-X 💌*\n    *- Eva*'
+        let EVA_ACTİON = config.LANG == 'SI' || config.LANG == 'AZ' ? '*🎭Neotro-X Working As Chat Bot!* 🙇\n\n_🎭Neotro-X සම්පූර්ණ ක්‍රීතීම බුද්ධියෙන් Chat Bot ලෙස ක්‍රියා කරයි..._\n_මෙම විධානය භාවිතයෙන්_ *.eva off* _ඔබට පුලුවන් නැවත සාමාන්‍ය පරිදි සැකසීමට_\n\n*THANK FOR USING 🎭Neotro-X 💌*\n    *- Eva*' : '*🎭Neotro-X Working as a Chatbot! 🙇*\n\n_The purpose of this mod is to turn the bot into a fully functional AI chatbot._\n_You can use the_ *.eva off* _command to return to normal mode._\n\n*Thanks For Using 🎭Neotro-X 💌*\n    *- Eva*'
         if (conn.user.jid == one || conn.user.jid == two || conn.user.jid == three || conn.user.jid == four) {
             await conn.sendMessage(conn.user.jid,nw, MessageType.text), console.log(nw), await new Promise(r => setTimeout(r, 1000))
             await heroku.get(baseURI + '/formation').then(async (formation) => { 
@@ -370,7 +370,7 @@ ${chalk.blue.italic('🙇Connecting to Whatsapp..')}`);
                 if (config.FULLEVA == 'true') {
                     await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
                 } else {
-                    await conn.sendMessage(conn.user.jid, '*🎭Neotro-X As Public! 🙇*\n\n_මෙය ඔබගේ LOG අංකයයි..මෙහි විධාන භාවිතයෙන් වළකින්න._\n_ඔබට පුලුවන් වෙනත් ඕනෑම කතා බහක විධාන භාවිතා කිරීමට.. :)_\n\n*Botunuz herkese açık bir şekilde çalışmaktadır. Değiştirmek için* _.setvar WORK_TYPE:private_ *komutunu kullanın.*\n\n*🎭Neotro-X Kullandığın İçin Teşekkürler 💌*', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '*🎭Neotro-X As Public! 🙇*\n\n_මෙය ඔබගේ LOG අංකයයි..මෙහි විධාන භාවිතයෙන් වළකින්න._\n_ඔබට පුලුවන් වෙනත් ඕනෑම කතා බහක විධාන භාවිතා කිරීමට.. :)_\n\n*ඔබේ Bot Public ආකාරයට ක්‍රියා කරයි..එය වෙනස් කිරීමට* _.setvar WORK_TYPE:private_ *විධානය භාවිතා කරන්න.*\n\n*Bot ක්‍රියාත්මක වන්නෙ කෙසේද හා විධාන ලැයිස්තු ලබා ගැනීමට⚜ .basichelp විධානය භාවිතා කරන්න*\n\n*🎭Neotro-X භාවිතා කිරීම සම්බන්ධයෙන් ස්තූතියි 💌*', MessageType.text);
                 }
                 await git.fetch();
                 var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
@@ -388,7 +388,7 @@ ${chalk.blue.italic('🙇Connecting to Whatsapp..')}`);
                     );
                     await conn.sendMessage(
                         conn.user.jid,
-                        '```Güncellemek İçin``` *.update now* ```Yazın.```\n\n' + degisiklikler + '```', MessageType.text
+                        '```යතාවත්කාලීන කිරීමට``` *.update now* ```භාවිතා කරන්න.```\n\n' + degisiklikler + '```', MessageType.text
                     ); 
                 }
             }
@@ -396,7 +396,7 @@ ${chalk.blue.italic('🙇Connecting to Whatsapp..')}`);
                 if (config.FULLEVA == 'true') {
                     await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
                 } else {
-                    await conn.sendMessage(conn.user.jid, '*🎭Neotro-X Working as Public! 🙇*\n\n_කරුණාකර මෙහි විධාන භාවිතයෙන් වළකින්න.. මෙය ඔබගේ ලොග් අංකයයි._\n_ඔබට පුලුවන් වෙනත් ඔනෑම කතා බහක විධාන භාවිතා කරන්න :)_\n\n*ඔබේ Bot Public ආකාරයට ක්‍රියා කරයි. එය වෙනස් කිරීමට, මෙය භාවිතා කරන්න* _.setvar WORK_TYPE:private_\n\n*Thanks for using 🎭Neotro-X💌*\n_නවතම තොරතුරු හා ගැටලු සදහා පහත සමූහයන්ට එකතු වෙන්න\n⚙support group\nhttps://chat.whatsapp.com/GTgqgMTo7FoJ1GqdijshsX\n⚙Bot News\n', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '*🎭Neotro-X Working As public!🙇Please do not try any commands here. This is your log number._\n_You can try commands anywhere else :)_\n\n_Type_ *.basichelp* _to get your full Help list and Basic Commands._\n\n_Your bot in Public Mode. To change, use_ ```.setvar WORK_TYPE:private``` _command._\n\n*Thanks for using 🎭Neotro-X💌*\n', MessageType.text);
                 }               
                 await git.fetch();
                 var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
@@ -415,7 +415,7 @@ ${chalk.blue.italic('🙇Connecting to Whatsapp..')}`);
         
                     await conn.sendMessage(
                         conn.user.jid,
-                        '```Type``` *.update now* ```යතාවත්කාලීන කිරීමට.```\n\n' + degisiklikler + '```', MessageType.text
+                        '```Type``` *.update now* ```for update.```\n\n' + degisiklikler + '```', MessageType.text
                     ); 
                 }
             }
@@ -425,33 +425,7 @@ ${chalk.blue.italic('🙇Connecting to Whatsapp..')}`);
                 if (config.FULLEVA == 'true') {
                     await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
                 } else {
-                    await conn.sendMessage(conn.user.jid, '*🎭Neotro-X Olarak Çalışıyor! 🐺*\n\n_Lütfen burada plugin denemesi yapmayın. Burası sizin LOG numaranızdır._\n_Herhangi bir sohbette komutları deneyebilirsiniz :)_\n\n*Botunuz sadece size özel olarak çalışmaktadır. Değiştirmek için* _.setvar WORK_TYPE:public_ *komutunu kullanın.*\n\n*🎭Neotro-X Kullandığın İçin Teşekkürler 💌*', MessageType.text);
-                }
-                await git.fetch();
-                var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
-                if (commits.total === 0) {
-                    await conn.sendMessage(
-                        conn.user.jid,
-                        Lang.UPDATE, MessageType.text
-                    );    
-                } else {
-                    var degisiklikler = Lang.NEW_UPDATE;
-                    commits['all'].map(
-                        (commit) => {
-                            degisiklikler += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' <' + commit.author_name + '>\n';
-                        }
-                    );
-                    await conn.sendMessage(
-                        conn.user.jid,
-                        '```Güncellemek İçin``` *.update now* ```Yazın.```\n\n' + degisiklikler + '```', MessageType.text
-                    ); 
-                }
-            }
-            else { 
-                if (config.FULLEVA == 'true') {
-                    await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
-                } else {
-                    await conn.sendMessage(conn.user.jid, '*🎭Neotro-X Working as Private! 🙇*\n\n_කරුණාකර මෙහි විධාන භාවිතයෙන් වළකින්න.. මෙය ඔබගේ ලොග් අංකයයි._\n_ඔබට පුලුවන් වෙනත් ඔනෑම කතා බහක විධාන භාවිතා කරන්න :)_\n\n*ඔබේ Bot private ආකාරයට ක්‍රියා කරයි. එය වෙනස් කිරීමට, මෙය භාවිතා කරන්න* _.setvar WORK_TYPE:public_\n\n_නවතම තොරතුරු හා ගැටලු සදහා පහත සමූහයන්ට එකතු වෙන්න\n⚙support group\n https://chat.whatsapp.com/GTgqgMTo7FoJ1GqdijshsX\n⚙Bot News\n https://chat.whatsapp.com/LuLTEKm22fp8gv4ltCmKMo\n⚙Bot News 02 Group\n https://chat.whatsapp.com/LVykTrmNEU98AktU0eBNNq\n⚙NeotroPlug group\n https://chat.whatsapp.com/JJs2iwfF0VKL3IWrIyr7AT\n\n*Thanks for using 🎭Neotro-X💌*', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '*🎭Neotro-X As private! 🙇*\n\n_මෙය ඔබගේ LOG අංකයයි..මෙහි විධාන භාවිතයෙන් වළකින්න._\n_ඔබට පුලුවන් වෙනත් ඕනෑම කතා බහක විධාන භාවිතා කිරීමට.. :)_\n\n*ඔබේ Bot Private ආකාරයට ක්‍රියා කරයි..එය වෙනස් කිරීමට* _.setvar WORK_TYPE:public_ *විධානය භාවිතා කරන්න.*\n\n*Bot ක්‍රියාත්මක වන්නෙ කෙසේද හා විධාන ලැයිස්තු ලබා ගැනීමට⚜ .basichelp විධානය භාවිතා කරන්න*\n\n*🎭Neotro-X භාවිතා කිරීම සම්බන්ධයෙන් ස්තූතියි 💌*', MessageType.text);
                 }
                 await git.fetch();
                 var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
@@ -469,7 +443,33 @@ ${chalk.blue.italic('🙇Connecting to Whatsapp..')}`);
                     );
                     await conn.sendMessage(
                         conn.user.jid,
-                        '```Type``` *.update now* ````යතාවත්කාලීන කිරීමට.```\n\n' + degisiklikler + '```', MessageType.text
+                        '```යතාවත්කාලීන කිරීමට``` *.update now* ```භාවිතා කරන්න.```\n\n' + degisiklikler + '```', MessageType.text
+                    ); 
+                }
+            }
+            else { 
+                if (config.FULLEVA == 'true') {
+                    await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
+                } else {
+                    await conn.sendMessage(conn.user.jid, '*🎭Neotro-X Working As private!🙇Please do not try any commands here. This is your log number._\n_You can try commands anywhere else :)_\n\n_Type_ *.basichelp* _to get your full Help list and Basic Commands._\n\n_Your bot in private  Mode. To change, use_ ```.setvar WORK_TYPE:public``` _command._\n\n*Thanks for using 🎭Neotro-X💌*', MessageType.text);
+                }
+                await git.fetch();
+                var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
+                if (commits.total === 0) {
+                    await conn.sendMessage(
+                        conn.user.jid,
+                        Lang.UPDATE, MessageType.text
+                    );    
+                } else {
+                    var degisiklikler = Lang.NEW_UPDATE;
+                    commits['all'].map(
+                        (commit) => {
+                            degisiklikler += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' ◁' + commit.author_name + '▷\n';
+                        }
+                    );
+                    await conn.sendMessage(
+                        conn.user.jid,
+                        '```Type``` *.update now* ````for update.```\n\n' + degisiklikler + '```', MessageType.text
                     ); 
                 }
             }
@@ -480,7 +480,7 @@ ${chalk.blue.italic('🙇Connecting to Whatsapp..')}`);
 
                 await conn.sendMessage(
                     conn.user.jid,
-                    '_Görünüşe Göre Private Moduna Geçmek İstiyorsun! Maalesef_ *WORK_TYPE* _Anahtarın Yanlış!_ \n_Merak Etme! Senin İçin Doğrusunu Bulmaya Çalışıyorum.._', MessageType.text
+                    '_ඔබට පෞද්ගලික මාදිලියට මාරුවීමට අවශ්ය බව පෙනේ!_ *WORK_TYPE* \n_කණගාටු නොවන්න! මම ඔබ වෙනුවෙන් සත්යය සොයා ගැනීමට උත්සාහ කරමි..._', MessageType.text
                 );
                 await heroku.patch(baseURI + '/config-vars', {
                     body: {
@@ -491,7 +491,7 @@ ${chalk.blue.italic('🙇Connecting to Whatsapp..')}`);
             else {
                 await conn.sendMessage(
                     conn.user.jid,
-                    '_ඔබට පෞද්ගලික මාදිලියට මාරුවීමට අවශ්ය බව පෙනේ!_ *WORK_TYPE* \n_කණගාටු නොවන්න! මම ඔබ වෙනුවෙන් සත්යය සොයා ගැනීමට උත්සාහ කරමි...._', MessageType.text
+                    '_._', MessageType.text
                 );
                 await heroku.patch(baseURI + '/config-vars', {
                     body: {
@@ -528,13 +528,13 @@ ${chalk.blue.italic('🙇Connecting to Whatsapp..')}`);
             if (config.LANG == 'SI' || config.LANG == 'AZ') {
                 return await conn.sendMessage(
                     conn.user.jid,
-                    '_Girdiğin_ *WORK_TYPE* _Anahtarı Bulunamadı!_ \n_Lütfen_ ```.setvar WORK_TYPE:private``` _Yada_ ```.setvar WORK_TYPE:public``` _Komutunu Kullanın!_', MessageType.text
+                    '_මෙම_ *WORK_TYPE* _විධාන භාවිතය වැරදියි!_ \n_කරුණාකර මෙය භාවිතා කරන්න_ ```.setvar WORK_TYPE:private``` _හෝ_ ```.setvar WORK_TYPE:public```', MessageType.text
                 );
             }
             else {
                 return await conn.sendMessage(
                     conn.user.jid,
-                    '_The_ *WORK_TYPE* _විධාන භාවිතය වැරදියි!_ \n_කරුණාකර මෙය භාවිතා කරන්න_ ```.setvar WORK_TYPE:private``` _Or_ ```.setvar WORK_TYPE:public```', MessageType.text
+                    'Wrong WORK_TYPE key! Please use “private” or “public', MessageType.text
                 );
             }
         }
@@ -786,8 +786,8 @@ ${chalk.blue.italic('🙇Connecting to Whatsapp..')}`);
                                     );
                                 }
                                 else {
-                                    return await conn.sendMessage(conn.user.jid, '*🙇🏻 Maalesef Bu Hatayı Okuyamadım! 🙇🏻*' +
-                                        '\n_Daha fazla yardım için grubumuza yazabilirsiniz._'
+                                    return await conn.sendMessage(conn.user.jid, '*🙇🏻 කණගාටුයි AUTO ERROR පද්ධතියට හදුනාගත නොහැකියි! 🙇🏻*' +
+                                        '\n_ඔබට පුලුවන් වැඩිදුර උදව් සදහා සහය සමූහයට ලිවීමට..'
                                         , MessageType.text
                                     );
                                 }
@@ -796,8 +796,8 @@ ${chalk.blue.italic('🙇Connecting to Whatsapp..')}`);
                                 await conn.sendMessage(conn.user.jid, '*-- Bot Report [🎭Neotro-X] --*' + 
                                     '\n*🎭Neotro-X Working Perfectly!*'+
                                     '\n_This is Your LOG Number.. මෙහි පණිවිඩ පිළිබඳව සැලකිලිමත් වන්න..!_' +
-                                    '\n_ඔබට යම් ගැටලුවක් ඇත්නම් අපගේ සහය සමූහයට සම්බන්ධ වන්න.._' +
-                                    '\n_සහය සමූහය_: https://chat.whatsapp.com/GTgqgMTo7FoJ1GqdijshsX' +
+                                    '\n_.._' +
+                                    '\n_Support group_: https://chat.whatsapp.com/GTgqgMTo7FoJ1GqdijshsX' +
                                     '\n_(saved Messages)._\n\n' +
                                     '*Error:* ```' + error + '```\n\n'
                                     , MessageType.text, {detectLinks: false}
@@ -920,8 +920,8 @@ ${chalk.blue.italic('🙇Connecting to Whatsapp..')}`);
                                     );
                                 }
                                 else {
-                                    return await conn.sendMessage(conn.user.jid, '*🙇🏻 කණගාටුයි..! Auto error පද්ධතියට හදුනාගත නොහැකියි..🙇🏻*' +
-                                        '\n_ඔබට පුලුවන් වැඩිදුර උදව් සදහා සහය සමූහයන්ට ලියන්න..._'
+                                    return await conn.sendMessage(conn.user.jid, '*🙇🏻 ..🙇🏻*' +
+                                        '\n_..._'
                                         , MessageType.text
                                     );
                                 }    
@@ -938,7 +938,7 @@ ${chalk.blue.italic('🙇Connecting to Whatsapp..')}`);
         await conn.connect();
     } catch {
         if (!nodb) {
-            console.log(chalk.red.bold('Eski sürüm stringiniz yenileniyor...'))
+            console.log(chalk.red.bold('Restart Old version...'))
             conn.loadAuthInfo(Session.deCrypt(config.SESSION)); 
             try {
                 await conn.connect();
