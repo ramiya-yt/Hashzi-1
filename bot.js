@@ -1,9 +1,7 @@
-/* Copyright (C) 2020 Yusuf Usta.
-
+/* Copyright (C) 2021 TENUX-Neotro.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-
-WhatsAsena - Yusuf Usta
+NEOTROX - TEENUHX
 */
 
 const fs = require("fs");
@@ -491,7 +489,7 @@ ${chalk.blue.italic('🙇Connecting to Whatsapp..')}`);
             else {
                 await conn.sendMessage(
                     conn.user.jid,
-                    '_._', MessageType.text
+                    '_Looks like you need to switch to general mode! _ * WORK_TYPE * \ n_Don't worry! I try to find the truth for you._', MessageType.text
                 );
                 await heroku.patch(baseURI + '/config-vars', {
                     body: {
@@ -504,7 +502,7 @@ ${chalk.blue.italic('🙇Connecting to Whatsapp..')}`);
             if (config.LANG == 'SI' || config.LANG == 'AZ') {
                 await conn.sendMessage(
                     conn.user.jid,
-                    '_Görünüşe Göre Public Moduna Geçmek İstiyorsun! Maalesef_ *WORK_TYPE* _Anahtarın Yanlış!_ \n_Merak Etme! Senin İçin Doğrusunu Bulmaya Çalışıyorum.._', MessageType.text
+                    '__ඔබට පොදු මාදිලියට මාරුවීමට අවශ්ය බව පෙනේ!_ *WORK_TYPE* \n_කණගාටු නොවන්න! මම ඔබ වෙනුවෙන් සත්යය සොයා ගැනීමට උත්සාහ කරමි...__', MessageType.text
                 );
                 await heroku.patch(baseURI + '/config-vars', {
                     body: {
@@ -515,7 +513,7 @@ ${chalk.blue.italic('🙇Connecting to Whatsapp..')}`);
             else {
                 await conn.sendMessage(
                     conn.user.jid,
-                    '_ඔබට පොදු මාදිලියට මාරුවීමට අවශ්ය බව පෙනේ!_ *WORK_TYPE* \n_කණගාටු නොවන්න! මම ඔබ වෙනුවෙන් සත්යය සොයා ගැනීමට උත්සාහ කරමි.._', MessageType.text
+                    '_Looks like you need to switch to public mode! _ * WORK_TYPE * \ n_Don t worry! I try to find the truth for you._', MessageType.text
                 );
                 await heroku.patch(baseURI + '/config-vars', {
                     body: {
