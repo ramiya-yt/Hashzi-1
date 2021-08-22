@@ -9,7 +9,6 @@ const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const translatte = require('translatte');
 const config = require('../config');
 const LanguageDetect = require('languagedetect');
-const WhatsAsenaStack = require('whatsasena-npm');
 const lngDetector = new LanguageDetect();
 const Heroku = require('heroku-client');
 const heroku = new Heroku({
@@ -217,27 +216,28 @@ if (config.WORKTYPE == 'private') {
         succ_off = 'Antilink Berhasil Ditutup!'
     }
     Asena.addCommand({pattern: 'antilink ?(.*)', fromMe: true, desc: l_dsc, usage: '.antilink on / off' }, (async (message, match) => {
+        const anti_status = `${config.ANTİLİNK}`
         if (match[1] == 'on') {
-            if (config.ANTI_LINK == 'false') {
+            if (anti_status == 'true') {
                 return await message.client.sendMessage(message.jid, '*' + alr_on + '*', MessageType.text)
             }
             else {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
-                        ['ANTI_LINK']: 'true'
+                        ['ANTİ_LİNK']: 'true'
                     } 
                 });
                 await message.client.sendMessage(message.jid, '*' + succ_on + '*', MessageType.text)
             }
         }
         else if (match[1] == 'off') {
-            if (config.ANTI_LINK == 'true') {
+            if (anti_status !== 'true') {
                 return await message.client.sendMessage(message.jid, '*' + alr_off + '*', MessageType.text)
             }
             else {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
-                        ['ANTI_LINK']: 'false'
+                        ['ANTİ_LİNK']: 'false'
                     } 
                 });
                 await message.client.sendMessage(message.jid, '*' + succ_off + '*', MessageType.text)
@@ -426,7 +426,7 @@ if (config.WORKTYPE == 'private') {
                 return;
     
             let 
-                LANG = 'si',
+                LANG = 'en',
                 ttsMessage = match[1],
                 SPEED = 1.0
 
@@ -519,7 +519,7 @@ if (config.WORKTYPE == 'private') {
     
         var mesaj = '';
         arama.all.map((video) => {
-            mesaj += '*🚀 ' + video.title + '* - ' + video.url + '\n'
+            mesaj += '*🧞 ' + video.title + '* - ' + video.url + '\n'
         });
 
         await message.client.sendMessage(message.jid,mesaj,MessageType.text);
@@ -986,7 +986,7 @@ else if (config.WORKTYPE == 'public') {
     
         var mesaj = '';
         arama.all.map((video) => {
-            mesaj += '*🚀 ' + video.title + '* - ' + video.url + '\n'
+            mesaj += '*🧞 ' + video.title + '* - ' + video.url + '\n'
         });
 
         await message.client.sendMessage(message.jid,mesaj,MessageType.text);
