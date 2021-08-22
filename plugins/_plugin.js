@@ -2,6 +2,7 @@
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 NEOTROX - TEENUHX
+*/
 
 const Asena = require('../events');
 const Heroku = require('heroku-client');
@@ -107,4 +108,4 @@ Asena.addCommand({pattern: 'remove(?: |$)(.*)', fromMe: true, desc: Lang.REMOVE_
     }
 
 }));
-*/
+
