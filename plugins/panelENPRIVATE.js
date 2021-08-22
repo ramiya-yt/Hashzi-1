@@ -98,7 +98,7 @@ Asena.addCommand({pattern: 'neotro', fromMe: true, desc: Lang.UP}, (async (messa
 
 *🛸Command:* ```.eva```
 *⭐Description:* Activates full functional EVA AI features Turn your account into a ai chatbot
-*⌨️ Example:* ```.eva  on / off```
+*⌨️ Example:* .eva  onoff
 
 *🛸Command:* ```.jid```
 *⭐Description:* ```Giving user s JID.```
