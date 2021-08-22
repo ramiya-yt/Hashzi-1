@@ -138,7 +138,7 @@ async function whatsAsena () {
     setInterval(async () => { 
         if (biography_var == 'true') {
             if (conn.user.jid.startsWith('90')) { // Turkey
-                var ov_time = new Date().toLocaleString('LK', { timeZone: 'Europe/Istanbul' }).split(' ')[1]
+                var ov_time = new Date().toLocaleString('AZ', { timeZone: 'Europe/Istanbul' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🎭Neotro-X'
@@ -148,14 +148,14 @@ async function whatsAsena () {
                 var ov_time = new Date().toLocaleString('AZ', { timeZone: 'Asia/Baku' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n ' + Config.BOTNAME + '\nᴾᵒʷᵉʳᵉᵈ ᴮʸ🎭Neotro-X'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n ' + Config.BOTNAME +' \nᴾᵒʷᵉʳᵉᵈ ᴮʸ🎭Neotro-X'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('94')) { // Sri Lanka
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('LK', { timeZone: 'Asia/Colombo' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n ' + Config.BOTNAME + '\nᴾᵒʷᵉʳᵉᵈ ᴮʸ🎭 Neotro-X'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n ' + Config.BOTNAME +' \nᴾᵒʷᵉʳᵉᵈ ᴮʸ🎭 Neotro-X'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('351')) { // Portugal
@@ -183,7 +183,7 @@ async function whatsAsena () {
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('ID', { timeZone: 'Asia/Jakarta' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n🎭Neotro-X'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n🎭Neotrox'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('49')) { // Germany
