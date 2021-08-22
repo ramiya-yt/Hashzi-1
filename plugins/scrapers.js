@@ -1,7 +1,9 @@
-/* Copyright (C) 2021 TENUX-Neotro.
+/* Copyright (C) 2020 Yusuf Usta.
+
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-NEOTROX - TEENUHX
+
+WhatsAsena - Yusuf Usta
 */
 
 const Asena = require('../events');
@@ -9,6 +11,7 @@ const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const translatte = require('translatte');
 const config = require('../config');
 const LanguageDetect = require('languagedetect');
+const WhatsAsenaStack = require('whatsasena-npm');
 const lngDetector = new LanguageDetect();
 const Heroku = require('heroku-client');
 const heroku = new Heroku({
@@ -88,13 +91,13 @@ if (config.LANG == 'ML') {
     dlang_other = 'മറ്റ് ഭാഷകൾ'
     dlang_input = 'പ്രോസസ്സ് ചെയ്ത വാചകം:'
 }
-if (config.LANG == 'SI') {
-    dlang_dsc = 'පිළිතුරු දුන් පණිවිඩයේ භාෂාව අනුමාන කරන්න'
-    closer_res = 'සමීපතම ප්‍රතිඵලය:'
-    dlang_lang = 'භාෂාව:'
-    dlang_similarity = 'සමානකම:'
-    dlang_other = 'වෙනත් භාෂා'
-    dlang_input = 'සැකසූ පෙළ:'
+if (config.LANG == 'HI') {
+    dlang_dsc = 'उत्तर दिए गए संदेश की भाषा का अनुमान लगाएं'
+    closer_res = 'निकटतम परिणाम:'
+    dlang_lang = 'जुबान:'
+    dlang_similarity = 'समानता:'
+    dlang_other = 'अन्य भाषाएँ'
+    dlang_input = 'संसाधित पाठ:'
 }
 if (config.LANG == 'ES') {
     dlang_dsc = 'Adivina el idioma del mensaje respondido.'
@@ -173,12 +176,12 @@ if (config.WORKTYPE == 'private') {
         succ_on = 'Antilink Uğurla Açıldı!'
         succ_off = 'Antilink Uğurla Bağlandı!'
     }
-    if (config.LANG == 'SI') {
-        l_dsc = 'ANTILINK'
-        alr_on = 'Antilink කලින්ම ක්‍රියාත්මකයි!'
-        alr_off = 'Antilink වසා දමා ඇත.'
-        succ_on = 'සාර්තකව Antilink පද්ධතිය ක්‍රියාත්මක විය.!'
-        succ_off = 'සාර්තකව Antilink පද්ධතිය අක්‍රිය විය'
+    if (config.LANG == 'HI') {
+        l_dsc = 'एंटीलिंक टूल को सक्रिय करता है।'
+        alr_on = 'एंटीलिंक पहले से ही खुला है!'
+        alr_off = 'एंटीलिंक वर्तमान में बंद है!'
+        succ_on = 'एंटीलिंक सफलतापूर्वक खोला गया!'
+        succ_off = 'एंटीलिंक सफलतापूर्वक बंद!'
     }
     if (config.LANG == 'ML') {
         l_dsc = 'ആന്റിലിങ്ക് ഉപകരണം സജീവമാക്കുന്നു.'
@@ -230,7 +233,7 @@ if (config.WORKTYPE == 'private') {
             }
         }
         else if (match[1] == 'off') {
-            if config.ANTI_LINK == 'true') {
+            if config.ANTI_LINK !== 'true') {
                 return await message.client.sendMessage(message.jid, '*' + alr_off + '*', MessageType.text)
             }
             else {
@@ -269,12 +272,12 @@ if (config.WORKTYPE == 'private') {
         succ_on_bio = 'Autobio Uğurla Açıldı!'
         succ_off_bio = 'Autobio Uğurla Bağlandı!'
     }
-    if (config.LANG == 'SI') {
-        auto_dsc = 'AI CLOCK!'
-        alr_on_bio = 'Autobio කලින්ම ක්‍රියාත්මකයි!'
-        alr_off_bio = 'Autobio අක්‍රියව ඇත!'
-        succ_on_bio = 'Autobio ක්‍රියාත්මකයි!'
-        succ_off_bio = 'Autobio අක්‍රිය විය!'
+    if (config.LANG == 'HI') {
+        auto_dsc = 'अपने बायो में लाइव घड़ी जोड़ें!'
+        alr_on_bio = 'Autobio पहले से ही खुला है!'
+        alr_off_bio = 'Autobio वर्तमान में बंद है!'
+        succ_on_bio = 'Autobio सफलतापूर्वक खोला गया!'
+        succ_off_bio = 'Autobio सफलतापूर्वक बंद!'
     }
     if (config.LANG == 'ML') {
         auto_dsc = 'നിങ്ങളുടെ ബയോയിലേക്ക് തത്സമയ ക്ലോക്ക് ചേർക്കുക!'
@@ -312,28 +315,27 @@ if (config.WORKTYPE == 'private') {
         succ_off_bio = 'Autobio Berhasil Ditutup!'
     }
     Asena.addCommand({pattern: 'autobio ?(.*)', fromMe: true, desc: auto_dsc, usage: '.autobio on / off' }, (async (message, match) => {
-        const bio_status = `${config.AUTOBİO}`
         if (match[1] == 'on') {
-            if (bio_status == 'true') {
+            if (config.AUTOBIO == 'true') {
                 return await message.client.sendMessage(message.jid, '*' + alr_on_bio + '*', MessageType.text)
             }
             else {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
-                        ['AUTO_BİO']: 'true'
+                        ['AUTO_BIO']: 'true'
                     } 
                 });
                 await message.client.sendMessage(message.jid, '*' + succ_on_bio + '*', MessageType.text)
             }
         }
         else if (match[1] == 'off') {
-            if (bio_status !== 'true') {
+            if (config.AUTOBIO !== 'true') {
                 return await message.client.sendMessage(message.jid, '*' + alr_off_bio + '*', MessageType.text)
             }
             else {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
-                        ['AUTO_BİO']: 'false'
+                        ['AUTO_BIO']: 'false'
                     } 
                 });
                 await message.client.sendMessage(message.jid, '*' + succ_off_bio + '*', MessageType.text)
@@ -390,7 +392,7 @@ if (config.WORKTYPE == 'private') {
         }
     }));
 
-    if (config.LANG == 'TR' || config.LANG == 'SI') {
+    if (config.LANG == 'TR' || config.LANG == 'AZ') {
 
         Asena.addCommand({pattern: 'tts (.*)', fromMe: true, desc: Lang.TTS_DESC}, (async (message, match) => {
 
@@ -398,7 +400,7 @@ if (config.WORKTYPE == 'private') {
                 return;
     
             let 
-                LANG = 'si',
+                LANG = 'tr',
                 ttsMessage = match[1],
                 SPEED = 1.0
 
@@ -425,7 +427,7 @@ if (config.WORKTYPE == 'private') {
                 return;
     
             let 
-                LANG = 'en',
+                LANG = config.LANG.toLowerCase(),
                 ttsMessage = match[1],
                 SPEED = 1.0
 
@@ -445,7 +447,7 @@ if (config.WORKTYPE == 'private') {
             await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true});
         }));
     }
-    Asena.addCommand({pattern: 'song ?(.*)', fromMe: true,  deleteCommand: true,  desc: Lang.SONG_DESC}, (async (message, match) => { 
+    Asena.addCommand({pattern: 'song ?(.*)', fromMe: true, desc: Lang.SONG_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text);    
         let arama = await yts(match[1]);
@@ -518,7 +520,7 @@ if (config.WORKTYPE == 'private') {
     
         var mesaj = '';
         arama.all.map((video) => {
-            mesaj += '*🧞 ' + video.title + '* - ' + video.url + '\n'
+            mesaj += '*' + video.title + '🚀 * - ' + video.url + '\n'
         });
 
         await message.client.sendMessage(message.jid,mesaj,MessageType.text);
@@ -541,18 +543,19 @@ if (config.WORKTYPE == 'private') {
     Asena.addCommand({pattern: 'img ?(.*)', fromMe: true, desc: Lang.IMG_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);
-        gis(match[1], async (error, result) => {
-            for (var i = 0; i < (result.length < 5 ? result.length : 5); i++) {
-                var get = got(result[i].url, {https: {rejectUnauthorized: false}});
-                var stream = get.buffer();
-                
-                stream.then(async (image) => {
-                    await message.client.sendMessage(message.jid,image, MessageType.image);
-                });
-            }
-
-            message.reply(Lang.IMG.format((result.length < 5 ? result.length : 5), match[1]));
-        });
+        
+        var img_list = await WhatsAsenaStack.search_image(match[1])
+        await message.client.sendMessage(message.jid, Lang.IMG.format(5, match[1]), MessageType.text);
+        var img1 = await axios.get(img_list.link1, {responseType: 'arraybuffer'})
+        var img2 = await axios.get(img_list.link2, {responseType: 'arraybuffer'})
+        var img3 = await axios.get(img_list.link3, {responseType: 'arraybuffer'})
+        var img4 = await axios.get(img_list.link4, {responseType: 'arraybuffer'})
+        var img5 = await axios.get(img_list.link5, {responseType: 'arraybuffer'})
+        await message.sendMessage(Buffer.from(img1.data), MessageType.image)
+        await message.sendMessage(Buffer.from(img2.data), MessageType.image)
+        await message.sendMessage(Buffer.from(img3.data), MessageType.image)
+        await message.sendMessage(Buffer.from(img4.data), MessageType.image)
+        await message.sendMessage(Buffer.from(img5.data), MessageType.image)
     }));
 
     Asena.addCommand({ pattern: 'github ?(.*)', fromMe: true, desc: Glang.GİTHUB_DESC }, async (message, match) => {
@@ -562,7 +565,7 @@ if (config.WORKTYPE == 'private') {
         if (userName === '') return await message.client.sendMessage(message.jid, Glang.REPLY, MessageType.text)
 
         await axios
-          .get(`https://hadi-api.herokuapp.com/api/githubstalk?username=${userName}`)
+          .get(`https://videfikri.com/api/github/?username=${userName}`)
           .then(async (response) => {
 
             const {
@@ -892,7 +895,7 @@ else if (config.WORKTYPE == 'public') {
             return;
     
         let 
-            LANG = 'si',
+            LANG = config.LANG.toLowerCase(),
             ttsMessage = match[1],
             SPEED = 1.0
 
@@ -918,7 +921,7 @@ else if (config.WORKTYPE == 'public') {
         let arama = await yts(match[1]);
         arama = arama.all;
         if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
-        var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text, {quoted: message.data});
+        var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text);
 
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
@@ -940,8 +943,8 @@ else if (config.WORKTYPE == 'public') {
                     });
                 writer.addTag();
 
-                reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text, {quoted: message.data});
-                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false, quoted: message.data});
+                reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text);
+                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
             });
     }));
 
@@ -985,7 +988,7 @@ else if (config.WORKTYPE == 'public') {
     
         var mesaj = '';
         arama.all.map((video) => {
-            mesaj += '*🧞 ' + video.title + '* - ' + video.url + '\n'
+            mesaj += '🛸 *' + video.title + '* - ' + video.url + '\n'
         });
 
         await message.client.sendMessage(message.jid,mesaj,MessageType.text);
@@ -1008,18 +1011,18 @@ else if (config.WORKTYPE == 'public') {
     Asena.addCommand({pattern: 'img ?(.*)', fromMe: false, desc: Lang.IMG_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);
-        gis(match[1], async (error, result) => {
-            for (var i = 0; i < (result.length < 5 ? result.length : 5); i++) {
-                var get = got(result[i].url, {https: {rejectUnauthorized: false}});
-                var stream = get.buffer();
-                
-                stream.then(async (image) => {
-                    await message.client.sendMessage(message.jid,image, MessageType.image);
-                });
-            }
-
-            message.reply(Lang.IMG.format((result.length < 5 ? result.length : 5), match[1]));
-        });
+        var img_list = await WhatsAsenaStack.search_image(match[1])
+        await message.client.sendMessage(message.jid, Lang.IMG.format(5, match[1]), MessageType.text);
+        var img1 = await axios.get(img_list.link1, {responseType: 'arraybuffer'})
+        var img2 = await axios.get(img_list.link2, {responseType: 'arraybuffer'})
+        var img3 = await axios.get(img_list.link3, {responseType: 'arraybuffer'})
+        var img4 = await axios.get(img_list.link4, {responseType: 'arraybuffer'})
+        var img5 = await axios.get(img_list.link5, {responseType: 'arraybuffer'})
+        await message.sendMessage(Buffer.from(img1.data), MessageType.image)
+        await message.sendMessage(Buffer.from(img2.data), MessageType.image)
+        await message.sendMessage(Buffer.from(img3.data), MessageType.image)
+        await message.sendMessage(Buffer.from(img4.data), MessageType.image)
+        await message.sendMessage(Buffer.from(img5.data), MessageType.image)
     }));
 
     Asena.addCommand({ pattern: 'github ?(.*)', fromMe: false, desc: Glang.GİTHUB_DESC }, async (message, match) => {
@@ -1029,7 +1032,7 @@ else if (config.WORKTYPE == 'public') {
         if (userName === '') return await message.client.sendMessage(message.jid, Glang.REPLY, MessageType.text)
 
         await axios
-          .get(`https://hadi-api.herokuapp.com/api/githubstalk?username=${userName}`)
+          .get(`https://videfikri.com/api/github/?username=${userName}`)
           .then(async (response) => {
 
             const {
