@@ -220,7 +220,7 @@ if (config.WORKTYPE == 'private') {
     }
     Asena.addCommand({pattern: 'antilink ?(.*)', fromMe: true, desc: l_dsc, usage: '.antilink on / off' }, (async (message, match) => {
         if (match[1] == 'on') {
-            if (config.ANTILINK == 'true') {
+            if (config.ANTI_LINK == 'false') {
                 return await message.client.sendMessage(message.jid, '*' + alr_on + '*', MessageType.text)
             }
             else {
@@ -233,7 +233,7 @@ if (config.WORKTYPE == 'private') {
             }
         }
         else if (match[1] == 'off') {
-            if config.ANTI_LINK !== 'true') {
+            if (config.ANTI_LINK !== 'true') {
                 return await message.client.sendMessage(message.jid, '*' + alr_off + '*', MessageType.text)
             }
             else {
