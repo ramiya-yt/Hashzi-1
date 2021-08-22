@@ -1,9 +1,7 @@
-/* 🆕Copyright (C) 2020 Yusuf Usta.
-
+/* Copyright (C) 2021 TENUX-Neotro.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-
-WhatsAsena - Yusuf Usta
+NEOTROX - TEENUHX
 */
 
 const Asena = require('../events');
@@ -90,13 +88,13 @@ if (config.LANG == 'ML') {
     dlang_other = 'മറ്റ് ഭാഷകൾ'
     dlang_input = 'പ്രോസസ്സ് ചെയ്ത വാചകം:'
 }
-if (config.LANG == 'HI') {
-    dlang_dsc = 'उत्तर दिए गए संदेश की भाषा का अनुमान लगाएं'
-    closer_res = 'निकटतम परिणाम:'
-    dlang_lang = 'जुबान:'
-    dlang_similarity = 'समानता:'
-    dlang_other = 'अन्य भाषाएँ'
-    dlang_input = 'संसाधित पाठ:'
+if (config.LANG == 'SI') {
+    dlang_dsc = 'පිළිතුරු දුන් පණිවිඩයේ භාෂාව අනුමාන කරන්න'
+    closer_res = 'සමීපතම ප්‍රතිඵලය:'
+    dlang_lang = 'භාෂාව:'
+    dlang_similarity = 'සමානකම:'
+    dlang_other = 'වෙනත් භාෂා'
+    dlang_input = 'සැකසූ පෙළ:'
 }
 if (config.LANG == 'ES') {
     dlang_dsc = 'Adivina el idioma del mensaje respondido.'
@@ -175,12 +173,12 @@ if (config.WORKTYPE == 'private') {
         succ_on = 'Antilink Uğurla Açıldı!'
         succ_off = 'Antilink Uğurla Bağlandı!'
     }
-    if (config.LANG == 'HI') {
-        l_dsc = 'एंटीलिंक टूल को सक्रिय करता है।'
-        alr_on = 'एंटीलिंक पहले से ही खुला है!'
-        alr_off = 'एंटीलिंक वर्तमान में बंद है!'
-        succ_on = 'एंटीलिंक सफलतापूर्वक खोला गया!'
-        succ_off = 'एंटीलिंक सफलतापूर्वक बंद!'
+    if (config.LANG == 'SI') {
+        l_dsc = 'ANTILINK'
+        alr_on = 'Antilink කලින්ම ක්‍රියාත්මකයි!'
+        alr_off = 'Antilink වසා දමා ඇත.'
+        succ_on = 'සාර්තකව Antilink පද්ධතිය ක්‍රියාත්මක විය.!'
+        succ_off = 'සාර්තකව Antilink පද්ධතිය අක්‍රිය විය'
     }
     if (config.LANG == 'ML') {
         l_dsc = 'ആന്റിലിങ്ക് ഉപകരണം സജീവമാക്കുന്നു.'
@@ -272,12 +270,12 @@ if (config.WORKTYPE == 'private') {
         succ_on_bio = 'Autobio Uğurla Açıldı!'
         succ_off_bio = 'Autobio Uğurla Bağlandı!'
     }
-    if (config.LANG == 'HI') {
-        auto_dsc = 'अपने बायो में लाइव घड़ी जोड़ें!'
-        alr_on_bio = 'Autobio पहले से ही खुला है!'
-        alr_off_bio = 'Autobio वर्तमान में बंद है!'
-        succ_on_bio = 'Autobio सफलतापूर्वक खोला गया!'
-        succ_off_bio = 'Autobio सफलतापूर्वक बंद!'
+    if (config.LANG == 'SI') {
+        auto_dsc = 'AI CLOCK!'
+        alr_on_bio = 'Autobio කලින්ම ක්‍රියාත්මකයි!'
+        alr_off_bio = 'Autobio අක්‍රියව ඇත!'
+        succ_on_bio = 'Autobio ක්‍රියාත්මකයි!'
+        succ_off_bio = 'Autobio අක්‍රිය විය!'
     }
     if (config.LANG == 'ML') {
         auto_dsc = 'നിങ്ങളുടെ ബയോയിലേക്ക് തത്സമയ ക്ലോക്ക് ചേർക്കുക!'
@@ -393,7 +391,7 @@ if (config.WORKTYPE == 'private') {
         }
     }));
 
-    if (config.LANG == 'TR' || config.LANG == 'AZ') {
+    if (config.LANG == 'TR' || config.LANG == 'SI') {
 
         Asena.addCommand({pattern: 'tts (.*)', fromMe: true, desc: Lang.TTS_DESC}, (async (message, match) => {
 
@@ -401,7 +399,7 @@ if (config.WORKTYPE == 'private') {
                 return;
     
             let 
-                LANG = 'tr',
+                LANG = 'si',
                 ttsMessage = match[1],
                 SPEED = 1.0
 
@@ -895,7 +893,7 @@ else if (config.WORKTYPE == 'public') {
             return;
     
         let 
-            LANG = 'en',
+            LANG = 'si',
             ttsMessage = match[1],
             SPEED = 1.0
 
