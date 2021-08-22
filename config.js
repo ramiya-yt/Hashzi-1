@@ -65,7 +65,7 @@ module.exports = {
     CAPTION_KEY: process.env.CAPTION_KEY === undefined ?'*🎭Neotro-X*' : process.env.CAPTION_KEY,
     HLOCK: process.env.HLOCK === undefined ?'hadi-api' : process.env.HLOCK,
     BANWORD: process.env.BANWORD === undefined ?'true' : process.env.BANWORD,
-    BOTNAME: process.env.BOTNAME === undefined ?'🌜HASHZI' : process.env.BOTNAME,
+    BOT_NAME: process.env.BOT_NAME === undefined ?'🌜HASHZI' : process.env.BOT_NAME,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
     BRANCH: 'master',
     HEROKU: {
