@@ -6,7 +6,8 @@ const axios = require('axios');
 const Language = require('../language');
 const Lang = Language.getString('scrapers');
 
-if (Config.WORKTYPE == 'private' || Config.LANG == 'SI') {
+if (Config.LANG == 'SI') {
+if (Config.WORKTYPE == 'private') {
 Asena.addCommand({pattern: 'textimg', fromMe: true, desc: Lang.UP}, (async (message, match) => {
 
     var r_text = new Array ();
@@ -135,4 +136,5 @@ Asena.addCommand({pattern: 'textimg', fromMe: true, desc: Lang.UP}, (async (mess
 `}) 
 
  }));
+ }
 }
