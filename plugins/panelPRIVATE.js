@@ -12,7 +12,7 @@ const axios = require('axios');
 const Language = require('../language');
 const Lang = Language.getString('scrapers');
 
-if (Config.WORKTYPE == 'private' || Config.LANGUAGE == 'SI') {
+if (Config.WORKTYPE == 'private' || Config.LANG == 'SI') {
 Asena.addCommand({pattern: 'neotro', fromMe: true, desc: Lang.UP}, (async (message, match) => {
 
     var r_text = new Array ();
