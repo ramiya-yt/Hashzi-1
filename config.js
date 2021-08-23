@@ -66,6 +66,8 @@ module.exports = {
     BANWORD: process.env.BANWORD === undefined ?'true' : process.env.BANWORD,
     BOT_NAME: process.env.BOT_NAME === undefined ?'🌜HASHZI' : process.env.BOT_NAME,
     MENU_LOGO: process.env.MENU_LOGO === undefined ? 'https://telegra.ph/file/0d5425a8dd1b5ad3e3d81.jpg' : process.env.MENU_LOGO,
+    HACKER: process.env.HACKER === undefined ?'h4ck3rs404' : process.env.HACKER,
+    A_HACKER: process.env.A_HACKER === undefined ?'h4ck3rs404-api' : process.env.A_HACKER,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
     BRANCH: 'master',
     HEROKU: {
