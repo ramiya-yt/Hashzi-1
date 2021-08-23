@@ -13,7 +13,7 @@ if (Config.NEOY == 'xyz') {
 
     Asena.addCommand({pattern: 'basichelp', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
             
-            var image = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
+            var image = await axios.get (Config.MENU_LOGO, {responseType: 'arraybuffer'})
        
         await message.sendMessage (Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: `*⊰᯽⊱┈──╌❊  ❊╌──┈⊰᯽⊱*
  *═▣══❖⦁⦁⦁👽⦁⦁⦁❖══▣═*
