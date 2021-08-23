@@ -136,4 +136,5 @@ Asena.addCommand({pattern: 'textimg', fromMe: false, desc: Lang.UP}, (async (mes
 `}) 
 
  }));
+ }
 }
