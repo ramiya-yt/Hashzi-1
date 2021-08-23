@@ -1,9 +1,7 @@
-/* Copyright (C) 2020 Yusuf Usta.
-
+/* Copyright (C) 2021 TENUX-Neotro.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-
-WhatsAsena - Yusuf Usta
+NEOTROX - TEENUHX
 */
 
 const { Sequelize } = require('sequelize');
@@ -67,6 +65,7 @@ module.exports = {
     HLOCK: process.env.HLOCK === undefined ?'hadi-api' : process.env.HLOCK,
     BANWORD: process.env.BANWORD === undefined ?'true' : process.env.BANWORD,
     BOT_NAME: process.env.BOT_NAME === undefined ?'🌜HASHZI' : process.env.BOT_NAME,
+    MENU_LOGO: process.env.MENU_LOGO === undefined ? 'https://telegra.ph/file/0d5425a8dd1b5ad3e3d81.jpg' : process.env.MENU_LOGO,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
     BRANCH: 'master',
     HEROKU: {
