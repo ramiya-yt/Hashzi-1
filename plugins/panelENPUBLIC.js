@@ -287,4 +287,5 @@ Asena.addCommand({pattern: 'neotro', fromMe: false, desc: Lang.UP}, (async (mess
 `}) 
 
  }));
+ }
 }
