@@ -29,7 +29,7 @@ module.exports = {
     ANTILINKMSG: process.env.ANTILINK_MESSAGE === undefined ? 'Kicked Out This Group 🛸Antilink system' : process.env.ANTILINK_MESSAGE,
     AUTOBİO: process.env.AUTO_BİO === undefined ? 'false' : process.env.AUTO_BİO,
     GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://i.hizliresim.com/loUtAb.jpg' : process.env.GAN_IMAGE,
-    LANG: process.env.LANGUAGE === undefined ? 'SI' : process.env.LANGUAGE.toUpperCase(),
+    LANG: process.env.LANGUAGE === undefined ? 'EN' : process.env.LANGUAGE.toUpperCase(),
     ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'default' : process.env.ALIVE_MESSAGE,
     ALIVE_LOGO: process.env.ALIVE_LOGO === undefined ? 'https://telegra.ph/file/0d5425a8dd1b5ad3e3d81.jpg' : process.env.ALIVE_LOGO,
     WELCOME_LOGO: process.env.WELCOME_LOGO === undefined ? 'https://telegra.ph/file/1c9d26b04ca643a8e20f7.mp4' : process.env.WELCOME_LOGO,
