@@ -6,7 +6,7 @@ const axios = require('axios');
 const Language = require('../language');
 const Lang = Language.getString('scrapers');
 
-if (Config.WORKTYPE == 'private' || Config.LANGUAGE == 'EN') {
+if (Config.WORKTYPE == 'private' || Config.LANG == 'EN') {
 Asena.addCommand({pattern: 'textimg', fromMe: true, desc: Lang.UP}, (async (message, match) => {
 
     var r_text = new Array ();
