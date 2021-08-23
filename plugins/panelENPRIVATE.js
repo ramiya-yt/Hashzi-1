@@ -34,7 +34,7 @@ Asena.addCommand({pattern: 'neotro', fromMe: true, desc: Lang.UP}, (async (messa
 
 
 ┏━━°✨•°:🌝 :°•✨°━━━┓
-*◁         PUBLIC BOT◦        ▷*
+*◁       PRIVATE BOT◦        ▷*
 ┗━━°✨•°:🎭:°•✨°━━━┛
 
 *🛸Command:* .textimg
