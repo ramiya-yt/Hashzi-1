@@ -13,6 +13,7 @@ const Language = require('../language');
 const Lang = Language.getString('scrapers');
 
 if (Config.LANG == 'SI') {
+if (Config.WORKTYPE == 'public') {
 Asena.addCommand({pattern: 'neotro', fromMe: false, desc: Lang.UP}, (async (message, match) => {
 
     var r_text = new Array ();
