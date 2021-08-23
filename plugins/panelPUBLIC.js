@@ -1,38 +1,22 @@
-/* Copyright (C) 2021 TENUX-Neotro.
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-NEOTROX - TEENUHX
-*/
-
 const Asena = require('../events');
-const Config = require('../config');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
+const {spawnSync} = require('child_process');
+const Config = require('../config');
+const chalk = require('chalk');
 const axios = require('axios');
-//language
+
 const Language = require('../language');
-const Lang = Language.getString('scrapers');
+const Lang = Language.getString('system_stats');
 
 if (Config.LANG == 'SI') {
-if (Config.WORKTYPE == 'public') {
-Asena.addCommand({pattern: 'neotro', fromMe: false, desc: Lang.UP}, (async (message, match) => {
+if (Config.WORK_TYPE == 'public') {
 
-    var r_text = new Array ();
-    
-    
-    r_text[0] = "https://telegra.ph/file/3d0d9cb639967be2d12c8.jpg";
-    r_text[1] = "https://telegra.ph/file/41eb7a593d1aaef636280.jpg";
-    r_text[2] = "https://telegra.ph/file/8b12beb9fee7b8e6af976.jpg";
-    r_text[3] = "https://telegra.ph/file/ab2d7edcfca9a7f573514.jpg";
-    r_text[4] = "https://telegra.ph/file/fd6632a8b3d38f904d54e.jpg";
-    r_text[5] = "https://telegra.ph/file/d745280e1b4d744e6f2d6.jpg";
-    
-        
-     var i = Math.floor(6*Math.random())
-
-    var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
-
-    await message.sendMessage (Buffer.from (respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `*⊰᯽⊱┈──╌❊  ❊╌──┈⊰᯽⊱*
-
+    Asena.addCommand({pattern: 'neotro', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+            
+            var image = await axios.get (Config.MENU_LOGO, {responseType: 'arraybuffer'})
+       
+        await message.sendMessage (Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: `*⊰᯽⊱┈──╌❊  ❊╌──┈⊰᯽⊱*
+ *❖⦁⦁⦁👽⦁⦁⦁❖*
  *╔═▣══❖⦁⦁⦁👽⦁⦁⦁❖══▣═╗*
  *◁            PUBLIC BOT                ▷*
  *╚══❖═══▣.▣════❖══╝*
