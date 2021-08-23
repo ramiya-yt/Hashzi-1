@@ -1,35 +1,24 @@
 const Asena = require('../events');
-const Config = require('../config');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
+const {spawnSync} = require('child_process');
+const Config = require('../config');
+const chalk = require('chalk');
 const axios = require('axios');
-//language
+
 const Language = require('../language');
-const Lang = Language.getString('scrapers');
+const Lang = Language.getString('system_stats');
 
 if (Config.LANG == 'SI') {
-if (Config.WORKTYPE == 'public') {
-Asena.addCommand({pattern: 'textimg', fromMe: false, desc: Lang.UP}, (async (message, match) => {
+if (Config.WORK_TYPE == 'public') {
 
-    var r_text = new Array ();
-    
-    
-    r_text[0] = "https://telegra.ph/file/0d5425a8dd1b5ad3e3d81.jpg";
-    r_text[1] = "https://telegra.ph/file/4efb53aba19b0f1ccad12.jpg";
-    r_text[2] = "https://telegra.ph/file/7e18f85e60d0fe643c5d4.jpg";
-    r_text[3] = "https://telegra.ph/file/7b068a15a9b0adb97064d.jpg";
-    r_text[4] = "https://telegra.ph/file/b92174516f031df6ebd26.jpg";
-    r_text[5] = "https://telegra.ph/file/b92174516f031df6ebd26.jpg";
-    
-        
-     var i = Math.floor(6*Math.random())
-
-    var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
-
-    await message.sendMessage (Buffer.from (respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `*◁○Neutro Logopack ○▷*
-
- ╔════════════════╗
-*╠▷  Neotro Logo Pack🎭◁╣*
-╚════════════════╝
+    Asena.addCommand({pattern: 'textimg', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+            
+            var image = await axios.get (Config.MENU_LOGO, {responseType: 'arraybuffer'})
+       
+        await message.sendMessage (Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: `*⊰᯽⊱┈──╌❊  ❊╌──┈⊰᯽⊱*
+ *╔═▣══❖⦁⦁⦁👽⦁⦁⦁❖══▣═╗*
+*▷  Neotro Logo Pack🎭◁*
+🚀╚════════════════╝🚀
 
 ▷මෙය පහසුවෙන්ම විවිධ LoGo සාදයි කළයුතු වන්නෙ පහත විධානයකට ඉදිරියෙන් ඔබේ අකුරු දමන්න පමණි.
 🙇උදා: .ninjalogo Neotrox
