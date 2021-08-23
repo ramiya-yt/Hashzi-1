@@ -561,6 +561,10 @@
             "UP": "🧞",
             "SPO_DOWN": "🆙",
             "SPO_UP": "🆙",
+            "REPORT": "Sends reports to group admins.",
+            "USER": "=== ```Report``` ===\n\n*User:* ",
+            "REASON": "\n*Reason:* ",
+            "REPLY": "*Please Respond to User's Message to Report!*",
             "SPO_ERR": "🆙"
         }
     }
