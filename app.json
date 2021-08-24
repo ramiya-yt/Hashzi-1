@@ -102,7 +102,7 @@
         "WELCOME_LOGO": {
             "description": "WELCOME LOGO | Welcome message video වෙනස් කිරීම සඳහා ඔබගේ video link පහත සඳහන් කරන්න.",
             "required": true,
-            "value": "https://telegra.ph/file/1c9d26b04ca643a8e20f7.mp4"
+            "value": "https://telegra.ph/file/d969f3365028c88c7719f.mp4"
         },
         "BYE_LOGO": {
             "description": "GOOD BYE LOGO | Goodbye message video වෙනස් කිරීම සඳහා ඔබගේ video link පහත සඳහන් කරන්න.",
