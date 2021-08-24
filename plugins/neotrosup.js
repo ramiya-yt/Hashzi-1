@@ -7,7 +7,7 @@ const Config = require('../config');
 const Language = require('../language');
 const Lang = Language.getString('anime');
 
-    Asena.addCommand({pattern: 'help', fromMe: true, desc: Lang.AN}, (async (message, match) => {
+    Asena.addCommand({pattern: 'tq1ns', fromMe: true, desc: Lang.AN}, (async (message, match) => {
 
     var r_text = new Array ();
 
@@ -101,7 +101,7 @@ const Lang = Language.getString('anime');
 
  if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'help', fromMe: false, desc: Lang.AN}, (async (message, match) => {
+    Asena.addCommand({pattern: 'tq1hn', fromMe: false, desc: Lang.AN}, (async (message, match) => {
 
     var r_text = new Array ();
 
