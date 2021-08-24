@@ -9,6 +9,6 @@ const {MessageType} = require('@adiwajshing/baileys');
 
 Asena.addCommand({pattern: 'version', fromMe: false}, (async (message, match) => {
 
-    await message.sendMessage("*🙇NEUTRO VERSION CHECKER🙇*\n\n*🧚‍♂️Neutro ▻5.3.2*\n*Global Stable*");
+    await message.sendMessage("*🙇NEUTRO VERSION CHECKER🙇*\n\n*🧚‍♂️Neutro ▻5.5.2*\n*Global Stable*");
 
 }));
