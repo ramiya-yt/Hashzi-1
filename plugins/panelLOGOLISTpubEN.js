@@ -25,30 +25,47 @@ Example: .ninjalogo Neotrox
 
 ▷ Failure to execute some of the commands here is not a bot error but an API issue with the service.
 
-*🚀command* : .silk
-*💠 Description* : Create your font on a Natural Silk panel.
+*🚀command*: .nxninja
+*🌀 Description*: It translates your text into a ninja logo.
 
-*🚀command* : ▷ .lava
-*💠Description* : Creates your font as Lava.
+ *🚀command*: .nwolf
+*🌀Description*: It translates your text into a wolf logo
 
-*⚜command*: ▷ .rock
-*💠Description* : Translates letters as a stone
+ *command*: .nxwolf
+*🌀Description*: It translates your text into a purple Wolf logo
 
-*⚜command*: ▷ .sbanner
-*💠 Description* : Creates gaming banners.
+*🚀command*: .marvel
+*🌀Description*: It translates your text into the Marvel logo
 
-*⚜command*: ▷ .warface
-*💠 Description* : Creates gaming banners.
+*🚀command*: .dgold
+*🌀 Description*: It converts your text into a photo with gold lettering
 
-*⚜command*:  .coverwatch
-*💠 Description* : Creates gaming banners.
+*🚀command*: .glossy
+*🌀 Description*: It translates your text into a glossy logo
 
-*⚜command*: ▷ .mtm
-*💠 Description* : Creates fonts as Mattrix.
+*🚀command*: .njoker
+*🌀 Description*: It translates your text into a joker logo
 
-*⚜command*: ▷ .wmatrix
-*💠 Description* : Creates fonts as a web mattrix.
+*🚀command*: .horror
+*🌀 Description*: It converts your text into Horror Photos
 
+*🚀command*: .blood
+*🌀Description*: .It translates your text into a bloody photo
+
+*command*: .toxic
+*🌀Description*: It translates your characters into toxic characters
+
+*🚀command*: .space3d
+*🌀Description*: It translate your text into Space LOGO
+
+*🚀command*: .luxury
+*🌀Description*: It translates your letters into luxury gold
+
+*🚀command*: .xmas
+*🌀Description*: It translates your text into Christmas photos
+
+*🚀command*: .metald
+*🌀 Description*: It translates your text into Metak Dark logo
 *⚜command*: ▷ .sand
 *💠 Description* : Creates a beach font.
 
