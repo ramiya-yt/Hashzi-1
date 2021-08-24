@@ -363,12 +363,6 @@ Asena.addCommand({pattern: 'silk ?(.*)', fromMe: true, dontAddCommandList: true}
 
     }));
 
-const Asena = require('../events');
-const Config = require('../config');
-const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
-const fs = require('fs');
-const axios = require('axios');
-
 Asena.addCommand({pattern: 'blood ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
