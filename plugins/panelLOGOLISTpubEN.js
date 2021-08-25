@@ -9,7 +9,7 @@ const Language = require('../language');
 const Lang = Language.getString('system_stats');
 
 if (Config.LANG == 'EN') {
-if (Config.WORK_TYPE == 'public') {
+if (Config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'textimg', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
             
