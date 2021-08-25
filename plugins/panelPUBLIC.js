@@ -9,7 +9,7 @@ const Language = require('../language');
 const Lang = Language.getString('system_stats');
 
 if (Config.LANG == 'SI') {
-if (Config.WORK_TYPE == 'public') {
+if (config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'neotro', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
             
