@@ -30,6 +30,9 @@ if (Config.NEOY == 'xyz') {
 *🛸Command:* .textimg
 *⭐Description:* Converts text to logo
 
+*🛸Command:* .ftext
+*⭐Description:* Converts text to francy text
+
 *🛸Command:* .pluglist
 *⭐Description:* Displays the plugin list
 
