@@ -26,8 +26,8 @@ const heroku = new Heroku({
 
 let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
-Asena.addCommand({pattern: 'package ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC, warn: Lang.WARN}, (async (message, match) => {
-    if (match[1] === '') return await message.sendMessage(Lang.NEED_URL + '.pkg https://gist.github.com/Neotro23/4232b1c8c4734e1f06c3d991149c6fbd')
+Asena.addCommand({pattern: 'npkg ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC, warn: Lang.WARN}, (async (message, match) => {
+    if (match[1] === '') return await message.sendMessage(Lang.NEED_URL + '.npkg https://paste-bin.xyz/paste.php?raw&id=2416&password')
     try {
         var url = new URL(match[1]);
     } catch {
@@ -36,7 +36,7 @@ Asena.addCommand({pattern: 'package ?(.*)', fromMe: true, desc: Lang.INSTALL_DES
     
     if (url.host === 'paste-bin.xyz') {
         url.host = 'paste-bin.xyz/paste.php?';
-        url = url.toString() + '=xnxcom'
+        url = url.toString() + Config.PKGPS,
     } else {
         url = url.toString()
     }
